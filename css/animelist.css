@@ -1,0 +1,264 @@
+/* _functions.scss */
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:400,700");
+@import url("http://fonts.googleapis.com/css?family=Contrail+One");
+@import url("http://fonts.googleapis.com/css?family=Crimson+Text");
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:400,700");
+/* line 8, scss/animelist.scss */
+BODY {
+  margin: 0;
+  background-image: url("http://i.imgur.com/Fg6I8.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  color: rgba(101, 101, 101, 0.9);
+  margin: 0;
+  padding: 0;
+}
+
+/* line 20, scss/animelist.scss */
+.header_al {
+  opacity: 0.3;
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  -o-transition: all 0.35s ease-out;
+  -ms-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+/* line 28, scss/animelist.scss */
+.header_al:hover {
+  opacity: 0.9;
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  -o-transition: all 0.35s ease-in;
+  -ms-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+
+/* line 39, scss/animelist.scss */
+#list_surround {
+  width: 1020px;
+  height: auto;
+  max-width: 1020px;
+  padding: 20px;
+  margin: 20px auto 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px, rgba(255, 255, 255, 0.75) 0px 1px 0px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px, rgba(255, 255, 255, 0.75) 0px 1px 0px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px, rgba(255, 255, 255, 0.75) 0px 1px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px, rgba(255, 255, 255, 0.75) 0px 1px 0px inset;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 4000, color-stop(0%, rgba(170, 170, 170, 0.3)), color-stop(100%, rgba(170, 170, 170, 0))), url("http://i.imgur.com/PL7kN.png");
+  background-image: -webkit-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(170, 170, 170, 0) 4000px), url("http://i.imgur.com/PL7kN.png");
+  background-image: -moz-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(170, 170, 170, 0) 4000px), url("http://i.imgur.com/PL7kN.png");
+  background-image: -o-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(170, 170, 170, 0) 4000px), url("http://i.imgur.com/PL7kN.png");
+  background-image: -ms-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(170, 170, 170, 0) 4000px), url("http://i.imgur.com/PL7kN.png");
+  background-image: linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(170, 170, 170, 0) 4000px), url("http://i.imgur.com/PL7kN.png");
+}
+/* line 49, scss/animelist.scss */
+#list_surround table {
+  width: 1020px;
+  height: auto;
+  max-width: 1020px;
+}
+
+/* line 55, scss/animelist.scss */
+a {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(101, 101, 101, 0.9);
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.7) 0px 1px 1px;
+}
+/* line 63, scss/animelist.scss */
+a:visited {
+  color: rgba(101, 101, 101, 0.9);
+}
+/* line 67, scss/animelist.scss */
+a:hover {
+  color: #445566;
+  padding-left: 5px;
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px;
+}
+
+/* line 75, scss/animelist.scss */
+.td1 {
+  color: rgba(101, 101, 101, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  -o-transition: all 0.35s ease-out;
+  -ms-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+/* line 87, scss/animelist.scss */
+.td1:hover {
+  padding: 10px 5px;
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  -o-transition: all 0.35s ease-in;
+  -ms-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+
+/* line 98, scss/animelist.scss */
+.td2 {
+  color: rgba(101, 101, 101, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  -o-transition: all 0.35s ease-out;
+  -ms-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+/* line 112, scss/animelist.scss */
+.td2:hover {
+  padding: 10px 5px;
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  -o-transition: all 0.35s ease-in;
+  -ms-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+
+/* line 122, scss/animelist.scss */
+.table_header {
+  margin-top: 5px;
+  color: #445566;
+  border: 1px solid rgba(255, 0, 0, 0.1);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 50, color-stop(0%, rgba(170, 170, 170, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.05))), url("http://i.imgur.com/PL7kN.png");
+  background-image: -webkit-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  background-image: -moz-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  background-image: -o-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  background-image: -ms-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  background-image: linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  padding: 5px;
+}
+
+/* line 133, scss/animelist.scss */
+.status_selected {
+  font-size: 20px;
+  border: 1px solid rgba(255, 0, 0, 0.1);
+  opacity: 1;
+  padding: 5px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 50, color-stop(0%, rgba(170, 170, 170, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.05))), url("http://i.imgur.com/PL7kN.png");
+  background-image: -webkit-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  background-image: -moz-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  background-image: -o-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  background-image: -ms-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  background-image: linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+}
+/* line 141, scss/animelist.scss */
+.status_selected a {
+  color: #445566;
+  font-size: 14px;
+  padding: 0 !important;
+}
+
+/* line 149, scss/animelist.scss */
+.status_not_selected {
+  color: #445566;
+  border: 1px solid rgba(255, 0, 0, 0.1);
+  opacity: 0.5;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 50, color-stop(0%, rgba(170, 170, 170, 0.3)), color-stop(100%, rgba(255, 255, 255, 0.05))), url("http://i.imgur.com/PL7kN.png");
+  background-image: -webkit-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  background-image: -moz-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  background-image: -o-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  background-image: -ms-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  background-image: linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0.05) 50px), url("http://i.imgur.com/PL7kN.png");
+  padding: 5px 0;
+}
+/* line 157, scss/animelist.scss */
+.status_not_selected a {
+  color: #445566;
+  font-size: 14px;
+  padding: 0 !important;
+}
+/* line 164, scss/animelist.scss */
+.status_not_selected:hover {
+  opacity: 8;
+}
+
+/* line 170, scss/animelist.scss */
+.header_title {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* line 176, scss/animelist.scss */
+.category_totals {
+  margin: 10px 0;
+  font-size: 11px;
+  line-height: 20px;
+}
+/* line 181, scss/animelist.scss */
+.category_totals span {
+  padding: 10px;
+}
+
+/* line 186, scss/animelist.scss */
+.table_headerLink {
+  color: #445566;
+}
+/* line 189, scss/animelist.scss */
+.table_headerLink:Visited {
+  color: #445566;
+}
+/* line 193, scss/animelist.scss */
+.table_headerLink:Hover {
+  color: rgba(68, 85, 102, 0.8);
+  padding: 0px !important;
+}
+
+/* line 200, scss/animelist.scss */
+#copyright {
+  padding-top: 50px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 10px;
+  cursor: pointer;
+  color: rgba(68, 85, 102, 0.8);
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  -o-transition: all 0.35s ease-out;
+  -ms-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+/* line 213, scss/animelist.scss */
+#copyright a {
+  font-size: 10px;
+  color: rgba(68, 85, 102, 0.8);
+}
+/* line 218, scss/animelist.scss */
+#copyright:hover {
+  font-size: 12px;
+  color: #445566;
+  -webkit-transition: all 0.35s ease-in;
+  -moz-transition: all 0.35s ease-in;
+  -o-transition: all 0.35s ease-in;
+  -ms-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+/* line 227, scss/animelist.scss */
+#copyright:hover a {
+  font-size: 12px;
+}

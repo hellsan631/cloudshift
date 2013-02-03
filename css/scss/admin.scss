@@ -1,0 +1,217 @@
+@import "compass";
+@import "functions";
+
+body{
+	background:url("../images/bg/noise.png");
+	font: 12px Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	color:rgba(black,0.8);
+	margin:0;
+	padding:0;
+}
+
+a{
+	font: 12px Helvetica, Arial, sans-serif;
+	text-decoration:none;
+	color:rgba(black,0.8);
+}
+
+#bodycon{
+
+	@include dimentions(1000px,auto,none,300px);
+	@include centerthis(100px);
+
+}
+
+#actionmenu{
+	padding:10px;
+	margin:0;
+	list-style:none outside none;
+
+	li{
+		float:left;
+		margin:0px 15px 0px 0px;
+
+		.actionbutton{
+			display:block;
+			width:120px;
+			margin:0px 0px 20px;
+			text-align:center;
+
+			span{
+				display:block;
+				text-align:center;
+				border: 1px solid rgba(black, 0.125);
+				padding:15px 10px;
+				line-height:1.3em;
+
+				img{
+					margin-bottom:10px;
+					text-align:center;
+				}
+			}
+
+
+		}
+	}
+}
+
+#adminmenu{
+
+	@include dimentions(200px,auto,none,300px);
+	float:left;
+	display:inline-block;
+
+	.mi{
+		@include dimentions(200px,25px);
+		@include bgurl("white3.png", 'true');
+		@include box-shadow(rgba(255,255,255,0.75) 0px 1px 2px inset);
+		border: 1px solid rgba(black, 0.125);
+		text-align:center;
+		padding-top:10px;
+		margin-bottom:5px;
+		opacity:0.5;
+
+		&:hover{
+			@include box-shadow(rgba(255,255,255,0.75) 0px 1px 2px inset, rgba(black,0.2) 0px 0px 2px);
+			opacity:1;
+		}
+
+		a{
+			padding:15px 35px;
+			font: 14px Helvetica, Arial, sans-serif;
+		}
+	}
+
+	.sel{
+		opacity:0.8;
+	}
+}
+
+#content{
+
+	@include dimentions(795px,auto,none,300px);
+
+	float:right;
+	display:inline-block;
+
+	@include bgurl("white3.png", 'true');
+	@include box-shadow(rgba(255,255,255,0.75) 0px 1px 2px inset);
+	border: 1px solid rgba(black, 0.125);
+	opacity:0.9;
+
+}
+
+//all of this past this is bad stuff
+
+
+#logo{
+	padding-top:3px;
+	margin-right:20px;
+	color: rgba(0,0,0,0.46);
+	text-decoration:none;
+    font: 30px 'Contrail One', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+	@include text-shadow(rgba(255, 255, 255, 0.25) 0px 1px 1px);
+	float:left;
+	a{
+		color: rgba(0,0,0,0.46);
+		text-decoration:none;
+	    font: 30px 'Contrail One', sans-serif;
+	}
+}
+
+.menu-item{
+	margin-top:0px;
+	margin-left:7px;
+	padding:5px;
+	padding-top:13px;
+	padding-bottom:11px;
+	color: rgba(68, 85, 102,0.8);
+	font: 14px Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	float:left;
+	cursor: pointer;
+	@include text-shadow(rgba(255,255, 255, 0.7) 0px 1px 1px);
+
+	a{
+		font: 14px Helvetica, Arial, sans-serif;
+		font-weight: 600;
+		color: rgba(68, 85, 102,0.8);
+		padding:10px;
+	}
+
+	&:hover{
+		color: rgba(68, 85, 102,1);
+		@include background-image(linear-gradient(top, rgba(170,170,170,0.15) 0px, rgba(255,255,255,0.0) 50px));
+		@include box-shadow(rgba(0,0,0,0.125) 0px 0px 5px, rgba(255,255, 255, 0.55) 0 1px 0 inset);
+		@include text-shadow(rgba(255,255, 255, 0.1) 0px 1px 1px);
+	}
+}
+
+.selected-mi{
+	color: rgba(68, 85, 102,1);
+	@include background-image(linear-gradient(top, rgba(170,170,170,0.15) 0px, rgba(255,255,255,0.0) 50px));
+	@include box-shadow(rgba(0,0,0,0.125) 0px 0px 5px, rgba(255,255, 255, 0.55) 0 1px 0 inset);
+	@include text-shadow(rgba(255,255, 255, 0.1) 0px 1px 1px);
+}
+
+.logout{
+	margin-top:7px;
+	padding:6px 5px;
+	padding-right:0px;
+	color: rgba(68, 85, 102,0.8);
+	font: 14px Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	cursor: pointer;
+	@include text-shadow(rgba(255,255, 255, 0.7) 0px 1px 1px);
+	float:right;
+
+	a{
+		font: 14px Helvetica, Arial, sans-serif;
+		font-weight: 600;
+		color: rgba(68, 85, 102,0.8);
+		padding:10px;
+	}
+
+	&:hover{
+		color: rgba(68, 85, 102,1);
+	}
+}
+
+#menu-con{
+	padding:0;
+	margin:0;
+	margin-top:0px;
+	@include dimentions(100%,40px);
+    @include bgurl("white-less.png", 'true');
+	@include box-shadow(rgba(0,0,0,0.05) 0px 0px 5px, rgba(255,255, 255, 0.7) 0 2px 0 inset);
+}
+
+#head-color{
+	margin:0;
+	padding:0;
+	@include dimentions(100%,5px);
+	@include bgurl("off-red.png", 'true');
+	z-index:-1;
+}
+
+#head-con{
+	@include dimentions(100%,5px);
+	@include background-image(linear-gradient(top, rgba(255,255,255,0.15) 0, rgba(170,170,170,0.0) 5px));
+	z-index:0;
+}
+
+#menu-con-t{
+	padding:0;
+	margin:0;
+	@include dimentions(100%,100%);
+	@include background-image(linear-gradient(top, rgba(170,170,170,0.3) 0px,  rgba(255,255,255,0.0) 50px));
+}
+
+#menu{
+	color: rgba(255,255,255,1);
+	@include centerthis;
+	@include dimentions(960px, 40px);
+}

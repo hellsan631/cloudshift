@@ -1,0 +1,114 @@
+@import "compass";
+@import "functions";
+@import url("http://fonts.googleapis.com/css?family=Contrail+One");
+
+body{
+	background:url("../images/bg/noise.png");
+	color:rgba(101,101,101,1);
+	margin:0;
+	padding:0;
+}
+
+div{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height:14px;
+	@include text-shadow(rgba(255, 255, 255, 0.75) 1px 1px 0);
+}
+
+h2{
+	@include fonty(22px,28px);
+	text-align:left;
+	padding:0;
+	margin:5px 0;
+	@include text-shadow(rgba(255, 255, 255, 0.75) 1px 1px 0);
+}
+
+#body-con{
+	padding:0;
+	margin:0 auto;
+	width:960px;
+}
+
+#content-con{
+	@include dimentions(700px, auto);
+	margin:5px 0;
+	float:left;
+}
+
+#content{
+	@include dimentions(100%, auto, none, 400px);
+	@include bgurl("white3.png", 'true');
+	@include box-shadow(rgba(255,255,255,0.9) 0px 1px 0px inset);
+	border: 1px solid rgba(black, 0.1);
+	padding:0;
+	margin:0;
+}
+
+#list-con{
+	@include dimentions(250px, auto);
+	margin:5px 0;
+	float:right;
+}
+
+#list{
+	@include dimentions(100%, auto, none, 400px);
+	padding:0;
+	margin:0;
+}
+
+.pIcon{
+	display:inline-block;
+	border: 1px solid rgba(black, 0.1);
+	height:35px;
+	width:35px;
+}
+
+.pIcon-con{
+	height:35px;
+	width:35px;
+	margin:7px;
+	padding:0;
+	float:left;
+	display:inline-block;
+}
+
+.act-content{
+	width:175px;
+	margin:0;
+	padding:0;
+	margin-right:10px;
+	float:right;
+	text-align:right;
+	font: 12px Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	text-shadow: 0px 1px 2px rgba(255, 255, 255, 1);
+	color:rgba(101,101,101,0.7);
+	display:inline-block;
+
+	 h3{
+		font: 18px Helvetica, Arial, sans-serif;
+		font-weight: 700;
+		text-shadow: 0px 1px 2px rgba(255, 255, 255, 1);
+		color: rgba(68, 85, 102,1);
+		padding:0;
+		margin:5px 0 2px 0;
+		overflow:hidden;
+		text-align:left;
+		display:inline-block;
+	}
+}
+
+.friend{
+	margin:0;
+	margin-bottom:5px;
+	padding:0;
+	width:250px;
+	height:50px;
+	float:left;
+	display:inline-block;
+	@include bgurl("white3.png", 'true');
+	@include box-shadow(rgba(255,255,255,0.9) 0px 1px 0px inset);
+	border: 1px solid rgba(black, 0.1);
+	cursor:pointer;
+}

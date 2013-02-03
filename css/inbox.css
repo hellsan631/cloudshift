@@ -1,0 +1,166 @@
+/* _functions.scss */
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:400,700");
+@import url("http://fonts.googleapis.com/css?family=Contrail+One");
+@import url("http://fonts.googleapis.com/css?family=Crimson+Text");
+/* line 3, scss/inbox.scss */
+div {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 0;
+}
+
+/* line 10, scss/inbox.scss */
+.mail-con {
+  width: 948px;
+  height: auto;
+  padding: 5px;
+  padding-left: 7px;
+  margin: 15px auto 0;
+  opacity: 0.8;
+  color: rgba(101, 101, 101, 0.75);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 500, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(100%, rgba(170, 170, 170, 0.1)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 0px, rgba(170, 170, 170, 0.1) 500px);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.4) 0px, rgba(170, 170, 170, 0.1) 500px);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.4) 0px, rgba(170, 170, 170, 0.1) 500px);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.4) 0px, rgba(170, 170, 170, 0.1) 500px);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.4) 0px, rgba(170, 170, 170, 0.1) 500px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+  overflow: hidden;
+  cursor: default;
+}
+
+/* line 24, scss/inbox.scss */
+.inbox-control {
+  padding: 5px 10px;
+  cursor: pointer;
+  float: right;
+  margin-top: -5px;
+}
+
+/* line 31, scss/inbox.scss */
+.mail-con:hover {
+  opacity: 1;
+  color: #656565;
+}
+
+/* line 36, scss/inbox.scss */
+.small {
+  height: 26px;
+}
+
+/* line 40, scss/inbox.scss */
+.current-item {
+  opacity: 1;
+  color: #656565;
+}
+
+/* line 45, scss/inbox.scss */
+.text {
+  width: 900px;
+  height: auto;
+  min-height: 70px;
+  height: auto !important;
+  height: 70px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  border: 1px dotted rgba(0, 0, 0, 0.2);
+  float: left;
+  padding: 7px 5px;
+}
+
+/* line 55, scss/inbox.scss */
+.mail-top {
+  height: 16px;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 17px;
+  opacity: 1;
+  color: #656565;
+}
+
+/* line 64, scss/inbox.scss */
+.inbox-top-item {
+  margin-right: 24px;
+  float: left;
+}
+
+/* line 68, scss/inbox.scss */
+.inbox-item {
+  margin-right: 20px;
+  float: left;
+}
+
+/* line 73, scss/inbox.scss */
+.mail-avatar img {
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+/* line 78, scss/inbox.scss */
+.text-item {
+  margin-top: 5px;
+}
+
+/* line 82, scss/inbox.scss */
+.unread {
+  font-weight: 700;
+  opacity: 1;
+  color: rgba(101, 101, 101, 0.9);
+}
+
+/* line 88, scss/inbox.scss */
+.from {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  margin-top: 0px;
+  padding: 5px 0px;
+}
+/* line 94, scss/inbox.scss */
+.from:hover {
+  font-weight: 700;
+}
+
+/* line 99, scss/inbox.scss */
+.subject {
+  width: 610px;
+  height: auto;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-right: -80px;
+  margin-left: -10px;
+  padding: 5px;
+}
+
+/* line 108, scss/inbox.scss */
+.reply-icon {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* line 115, scss/inbox.scss */
+.time {
+  width: 72px;
+  height: auto;
+  float: right;
+  margin-left: 10px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* line 123, scss/inbox.scss */
+.actions {
+  width: 50px;
+  height: auto;
+  float: right;
+  margin-left: 10px;
+  margin-right: 2px;
+  text-align: center;
+  margin-top: 5px;
+}

@@ -1,0 +1,159 @@
+/* _functions.scss */
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:400,700");
+@import url("http://fonts.googleapis.com/css?family=Contrail+One");
+@import url("http://fonts.googleapis.com/css?family=Crimson+Text");
+/* line 3, scss/menu.scss */
+#logo {
+  padding-top: 3px;
+  margin-right: 20px;
+  color: rgba(0, 0, 0, 0.46);
+  text-decoration: none;
+  font: 30px 'Contrail One', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  text-shadow: rgba(255, 255, 255, 0.25) 0px 1px 1px;
+  float: left;
+}
+/* line 13, scss/menu.scss */
+#logo a {
+  color: rgba(0, 0, 0, 0.46);
+  text-decoration: none;
+  font: 30px 'Contrail One', sans-serif;
+}
+
+/* line 20, scss/menu.scss */
+.menu-item {
+  margin-top: 0px;
+  margin-left: 7px;
+  padding: 5px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  color: rgba(68, 85, 102, 0.8);
+  font: 14px Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  float: left;
+  cursor: pointer;
+  text-shadow: rgba(255, 255, 255, 0.7) 0px 1px 1px;
+}
+/* line 33, scss/menu.scss */
+.menu-item a {
+  font: 14px Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: rgba(68, 85, 102, 0.8);
+  padding: 10px;
+}
+/* line 40, scss/menu.scss */
+.menu-item:hover {
+  color: #445566;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 50, color-stop(0%, rgba(170, 170, 170, 0.15)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(170, 170, 170, 0.15) 0px, rgba(255, 255, 255, 0) 50px);
+  background-image: -moz-linear-gradient(top, rgba(170, 170, 170, 0.15) 0px, rgba(255, 255, 255, 0) 50px);
+  background-image: -o-linear-gradient(top, rgba(170, 170, 170, 0.15) 0px, rgba(255, 255, 255, 0) 50px);
+  background-image: -ms-linear-gradient(top, rgba(170, 170, 170, 0.15) 0px, rgba(255, 255, 255, 0) 50px);
+  background-image: linear-gradient(top, rgba(170, 170, 170, 0.15) 0px, rgba(255, 255, 255, 0) 50px);
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px;
+}
+
+/* line 48, scss/menu.scss */
+.selected-mi {
+  color: #445566;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 50, color-stop(0%, rgba(170, 170, 170, 0.15)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(170, 170, 170, 0.15) 0px, rgba(255, 255, 255, 0) 50px);
+  background-image: -moz-linear-gradient(top, rgba(170, 170, 170, 0.15) 0px, rgba(255, 255, 255, 0) 50px);
+  background-image: -o-linear-gradient(top, rgba(170, 170, 170, 0.15) 0px, rgba(255, 255, 255, 0) 50px);
+  background-image: -ms-linear-gradient(top, rgba(170, 170, 170, 0.15) 0px, rgba(255, 255, 255, 0) 50px);
+  background-image: linear-gradient(top, rgba(170, 170, 170, 0.15) 0px, rgba(255, 255, 255, 0) 50px);
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px, rgba(255, 255, 255, 0.55) 0 1px 0 inset;
+  text-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px;
+}
+
+/* line 55, scss/menu.scss */
+.logout {
+  margin-top: 7px;
+  padding: 6px 0px;
+  color: rgba(68, 85, 102, 0.8);
+  font: 14px Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  text-shadow: rgba(255, 255, 255, 0.7) 0px 1px 1px;
+  float: right;
+}
+/* line 65, scss/menu.scss */
+.logout a {
+  font: 14px Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: rgba(68, 85, 102, 0.8);
+  padding: 10px;
+  padding-right: 0px;
+}
+/* line 73, scss/menu.scss */
+.logout:hover {
+  color: #445566;
+}
+
+/* line 78, scss/menu.scss */
+#menu-con {
+  padding: 0;
+  margin: 0;
+  margin-top: 0px;
+  width: 100%;
+  height: 40px;
+  background: url("../images/bg/white-less.png") repeat scroll 0% 0% transparent;
+  -moz-box-shadow: rgba(255, 255, 255, 0.7) 0 2px 0 inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.7) 0 2px 0 inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.7) 0 2px 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 2px 0 inset;
+  border: 1px solid #cecece;
+}
+
+/* line 88, scss/menu.scss */
+#head-color {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 5px;
+  background: url("../images/bg/off-red.png") repeat scroll 0% 0% transparent;
+  z-index: -1;
+}
+
+/* line 96, scss/menu.scss */
+#head-con {
+  width: 100%;
+  height: 5px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 5, color-stop(0%, rgba(255, 255, 255, 0.15)), color-stop(100%, rgba(170, 170, 170, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(170, 170, 170, 0) 5px);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(170, 170, 170, 0) 5px);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(170, 170, 170, 0) 5px);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(170, 170, 170, 0) 5px);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(170, 170, 170, 0) 5px);
+  z-index: 0;
+}
+
+/* line 102, scss/menu.scss */
+#menu-con-t {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 50, color-stop(0%, rgba(170, 170, 170, 0.3)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0) 50px);
+  background-image: -moz-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0) 50px);
+  background-image: -o-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0) 50px);
+  background-image: -ms-linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0) 50px);
+  background-image: linear-gradient(top, rgba(170, 170, 170, 0.3) 0px, rgba(255, 255, 255, 0) 50px);
+}
+
+/* line 109, scss/menu.scss */
+#menu {
+  color: white;
+  margin: 0 auto 0;
+  width: 960px;
+  height: 40px;
+}

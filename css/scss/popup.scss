@@ -1,0 +1,162 @@
+@CHARSET "ISO-8859-1";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td {
+	border:0pt none;
+	font-family:inherit;
+	font-size:100%;
+	font-style:inherit;
+	font-weight:inherit;
+}
+
+a{
+	cursor: pointer;
+	text-decoration:none;
+}
+
+
+
+#backgroundPopup{
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	background:#000000;
+	border:1px solid #cecece;
+	z-index:1;
+}
+
+.popup{
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	height:384px;
+	width:408px;
+	background:#FFFFFF;
+	border-radius:5px;
+	z-index:2;
+	padding:12px;
+	font-size:13px;
+	box-shadow:0px 0px 10px rgba(0,0,0,0.9);
+}
+
+#resultCP{
+	width: 200px;
+	height: 30px;
+}
+
+input, textarea {
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font-family: 'Ubuntu', sans-serif;
+	color: rgba(101,101,101,0.55);
+	width: 260px;
+	background: -webkit-gradient(linear, left top, left 25, rgba(255,255,255,0), color-stop(125%, rgba(170,170,170,0.1)), to(rgba(255,255,255,0)));
+	background: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(170,170,170,0.1) 1px, rgba(255,255,255,0) 75px);
+}
+
+input, textarea {
+	border: 1px solid rgba(black, 0.125);
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border-color: rgba(201,201,201,0.7);
+	border: 1px solid rgba(black, 0.2);
+	color: rgba(101,101,101,0.85);
+}
+
+.ajaxresult{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:12px;
+	text-align:center;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.spacer{height:5px;width:100%;margin:0;padding:0;}
+
+.notice{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:10px;
+	color:rgba(70,70,70,1);
+	margin-bottom:5px;
+}
+
+.subjectBox{
+	width:500px;
+	border-color: rgba(201,201,201,0.7);
+	border: 1px solid rgba(black, 0.125);
+	color: rgba(101,101,101,0.85);
+}
+
+.textBox{
+	width:500px;
+	height:300px;
+	border: 1px solid rgba(black, 0.125);
+	color: rgba(101,101,101,0.85);
+}
+
+.popup h1{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:20px;
+	color: rgbA(111, 165, 253,1);
+	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+	border-bottom:1px dotted #D3D3D3;
+	margin:0;
+	padding:0;
+	padding-bottom:4px;
+	margin-bottom:20px;
+}
+
+.h2{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:12px;
+}
+
+.popupX{
+	font-family:arial,sans-serif;
+	font-size:14px;
+	line-height:14px;
+	right:6px;
+	top:4px;
+	position:absolute;
+	color:#6fa5fd;
+	font-weight:700;
+	display:block;
+	cursor:pointer;
+}
+
+.submit{
+	padding: 9px;
+	border: solid 1px rgba(201,201,201,0.5);
+	outline: 0;
+	font-family: 'Ubuntu', sans-serif;
+	color: rgba(101,101,101,0.925);
+	width: 100px;
+	background: -webkit-gradient(linear, left top, left 25, rgba(255,255,255,0), color-stop(75%, rgba(170,170,170,0.175)), to(rgba(255,255,255,0)));
+	background: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(170,170,170,0.175) 1px, rgba(255,255,255,0) 40px);
+	border: 1px solid rgba(black, 0.075);
+	position: absolute; bottom: 13px; right: 13px;
+}
+
+.passBox{
+	margin-bottom:14px;
+}
+
+.hovered{
+	border-color: rgba(201,201,201,0.7);
+	border: 1px solid rgba(black, 0.125);
+	color: rgba(101,101,101,0.85);
+}
+
+.long{
+	width:350px;
+	height:37px;
+}
+

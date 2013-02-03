@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Contrail+One);
+
+/*menu*/
+
+#logo{
+	padding-top:9px;
+	margin-right:20px;
+	color: rgba(0,0,0,0.46);
+	text-decoration:none;
+    font: 35px 'Contrail One', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.25);
+	float:left;
+}
+
+.menu-item{
+	margin-top:7px;
+	margin-left:7px;
+	padding:15px;
+	color: rgba(68, 85, 102,0.8);
+	font: 14px Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	float:left;
+	cursor: pointer;
+	text-shadow: 0px 1px 1px rgba(255,255, 255, 0.7);
+}
+.menu-item:hover{
+	color: rgba(68, 85, 102,1);
+	text-shadow: 0px 1px 1px rgba(255,255, 255, 0.1);
+}
+
+#menu-con{
+	padding:0;
+	margin:0;
+	margin-top:0px;
+	width:100%;
+	height:60px;
+    background: url('../../images/bg/white-less.png');
+	opacity:0.95;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.05);
+}
+
+#head-color{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:5px;
+	background: url('../../images/bg/off-red.png');
+	z-index:-1;
+}
+
+#head-con{
+	width:100%;
+	height:5px;
+	background: -webkit-gradient(linear, left top, left 25, rgba(170,170,170,0), color-stop(75%, rgba(255,255,255,0.15)), to(rgba(170,170,170,0)));
+	background: -moz-linear-gradient(top, rgba(170,170,170,0), rgba(255,255,255,0.15) 1px, rgba(170,170,170,0) 5px);
+	z-index:0;
+}
+
+#menu-con-t{
+	padding:0;
+	margin:0;
+	width:100%;
+	height:100%;
+	background: -webkit-gradient(linear, left top, left 25, rgba(255,255,255,0), color-stop(50%, rgba(170,170,170,0.3)), to(rgba(255,255,255,0)));
+	background: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(170,170,170,0.3) 1px, rgba(255,255,255,0) 50px);
+}
+
+#menu{
+	color: rgba(255,255,255,1);
+	padding:0;
+	margin:0 auto;
+	width:960px;
+	height:40px;
+}

@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ 
+	background:url("../../images/bg/noise.png");
+	color:rgba(101,101,101,0.9);
+	margin:0;
+	padding:0;
+}
+
+#bodycon{
+	width:100%;
+}
+
+#game{
+	margin:0;
+	padding:0;
+	margin-top:-50px;
+	float:right;
+	z-index:0;
+	position:fixed;
+	margin-left:350px;
+}
+
+#page-con{
+	width:760px;
+	height:500px;
+	margin:0 auto;
+}
+
+#name-con{
+	padding:10px;
+	width:500px;
+	height:35px;
+	background:url("../../images/bg/white2.png");
+	opacity:0.95;
+	margin:0 auto;
+	margin-top:350px;
+	box-shadow: 0px 0px 7px rgba(0,0,0,0.055), inset 0px 1px 2px rgba(255,255,255,0.75);
+	z-index:3;
+	position:relative;
+}
+
+.right{
+	float:right;
+}
+
+.long{
+	width:350px;
+	height:37px;
+}
+
+.login-cont{
+	width:300px;
+	height:305px;
+	background:url("../../images/bg/white2.png");
+	opacity:0.95;
+	margin:0 auto;
+	margin-top:250px;
+	box-shadow: 0px 0px 7px rgba(0,0,0,0.055), inset 0px 1px 2px rgba(255,255,255,0.75);
+	z-index:3;
+	position:relative;
+	float:left;
+	padding-bottom:5px;
+}
+
+#login-con:hover{
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.135), inset 0px 1px 2px rgba(255,255,255,0.95);
+}
+
+#info-con{
+	width:400px;
+	height:400px;
+	margin:0 auto;
+	margin-top:200px;
+	z-index:3;
+	position:relative;
+	float:right;
+}
+
+.error{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 12px;
+	text-align:center;
+	width:300px;
+	background: rgba(255,30,30,0.1);
+	margin-left:-20px;
+	margin-bottom:5px;
+}
+
+#inside{
+	margin-left:20px;
+	line-height:20px;
+	margin-right: 20px;
+}
+
+.content{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	z-index:4;
+	position:relative;
+	height:100%;
+	width:100%;
+}
+
+.shadows{
+	background: -webkit-gradient(linear, left top, left 25, rgba(255,255,255,0), color-stop(17%, rgba(170,170,170,0.2)), to(rgba(255,255,255,0)));
+	background: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(170,170,170,0.2) 1px, rgba(255,255,255,0) 120px);
+}
+
+#count{
+	margin:0 auto;
+	padding:10px;
+	padding-left:10px;
+	
+}
+
+#note{
+	color: #666666;
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 4px;
+	text-align: center;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+	width: 400px;
+}
+
+h1{
+	padding:0;
+	margin:0;
+	text-align:center;
+	font-size:35px;
+	line-height: 65px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight:400;
+	color: rgba(101,101,101,0.9);
+	text-shadow: 0px 0px 2px rgba(255,255,255,1);
+}
+
+.noerror{
+	margin-bottom:10px;
+}
+
+a{
+	text-decoration: none;
+	color: rgba(101,101,255,0.9);
+}
+
+.spaceman{
+	height:10px;
+	width:100%;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+h2{
+	padding:0;
+	padding-top:15px;
+	padding-bottom:10px;
+	margin:0;
+	text-align: center;
+	font-size: 50px;
+	line-height: 65px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight:700;
+	color: rgba(101,101,101,0.95);
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.05), 0px 1px 0px rgba(255,255,255,1);
+}
+
+p{
+	padding:0;
+	margin:0;
+	text-align: center;
+	font-size: 16px;
+	line-height: 25px;
+	font-family: 'Vollkorn', Georgia, Times, serif;
+	color: rgba(101,101,101,0.9);
+	text-shadow: 0px 1px 0px rgba(255,255,255,1);
+}
+
+br { clear: both; }
+
+input, textarea { 
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font-family: 'Ubuntu', sans-serif;
+	color: rgba(101,101,101,0.55);
+	width: 260px;
+	background: -webkit-gradient(linear, left top, left 25, rgba(255,255,255,0), color-stop(125%, rgba(170,170,170,0.1)), to(rgba(255,255,255,0)));
+	background: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(170,170,170,0.1) 1px, rgba(255,255,255,0) 75px);
+}
+
+input, textarea { 
+	box-shadow: inset 0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.hovered{
+	border-color: rgba(201,201,201,0.7); 
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+	color: rgba(101,101,101,0.85);
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus { 
+	border-color: rgba(201,201,201,0.7); 
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+	color: rgba(101,101,101,0.85);
+}
+
+#signup{
+	float:right;
+}
+
+#cpass{
+	opacity:1;
+	height:auto;
+	width:260px;
+	padding:9px;
+	margin-bottom:1.5em;
+}
+
+div .hidden{
+	height:0;
+	overflow:hidden;
+}
+
+div .small{
+	height:255px;
+	margin-top:275px;
+}
+
+.submit{
+	padding: 9px;
+	border: solid 1px rgba(201,201,201,0.5);
+	outline: 0;
+	font-family: 'Ubuntu', sans-serif;
+	color: rgba(101,101,101,0.925);
+	width: 100px;
+	background: -webkit-gradient(linear, left top, left 25, rgba(255,255,255,0), color-stop(75%, rgba(170,170,170,0.175)), to(rgba(255,255,255,0)));
+	background: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(170,170,170,0.175) 1px, rgba(255,255,255,0) 40px);
+	box-shadow: 0px 0px 5px rgba(0,0,0, 0.05);
+}

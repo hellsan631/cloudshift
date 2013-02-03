@@ -1,0 +1,545 @@
+/* _functions.scss */
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:400,700");
+@import url("http://fonts.googleapis.com/css?family=Contrail+One");
+@import url("http://fonts.googleapis.com/css?family=Crimson+Text");
+/* line 3, scss/profile.scss */
+.icon-comments, .icon-user, .icon-cog, .icon-minus, .icon-plus {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/ui/sprites.png");
+  background-repeat: no-repeat;
+}
+
+/* line 10, scss/profile.scss */
+.icon-comments {
+  background-position: 0 0;
+}
+
+/* line 13, scss/profile.scss */
+.icon-user {
+  background-position: -32px 0;
+}
+
+/* line 16, scss/profile.scss */
+.icon-cog {
+  background-position: -64px 0;
+}
+
+/* line 19, scss/profile.scss */
+.icon-minus {
+  background-position: -96px 0;
+}
+
+/* line 22, scss/profile.scss */
+.icon-plus {
+  background-position: -128px 0;
+}
+
+/* line 27, scss/profile.scss */
+body {
+  background: url("../images/bg/noise.png") repeat scroll 0% 0% transparent;
+  color: #656565;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 33, scss/profile.scss */
+div {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 37, scss/profile.scss */
+a {
+  color: #445566;
+}
+
+/* line 41, scss/profile.scss */
+#avatar-con {
+  float: left;
+  margin-top: 72px;
+  margin-left: 72px;
+  border: 3px solid white;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 48, scss/profile.scss */
+#avatar-con #useravatar {
+  width: 150px;
+  height: 150px;
+}
+
+/* line 53, scss/profile.scss */
+#low-menu {
+  background: url("../images/bg/white2.png");
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100, color-stop(1%, rgba(170, 170, 170, 0.2)), color-stop(100%, rgba(255, 255, 255, 0))), url("../images/bg/white2.png");
+  background-image: -webkit-linear-gradient(top, rgba(170, 170, 170, 0.2) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  background-image: -moz-linear-gradient(top, rgba(170, 170, 170, 0.2) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  background-image: -o-linear-gradient(top, rgba(170, 170, 170, 0.2) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  background-image: -ms-linear-gradient(top, rgba(170, 170, 170, 0.2) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  background-image: linear-gradient(top, rgba(170, 170, 170, 0.2) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  width: 938px;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+  padding: 11px;
+  margin-top: 250px;
+  -moz-border-radius: 0px 0px 3px 3px;
+  -webkit-border-radius: 0px 0px 3px 3px;
+  -o-border-radius: 0px 0px 3px 3px;
+  -ms-border-radius: 0px 0px 3px 3px;
+  -khtml-border-radius: 0px 0px 3px 3px;
+  border-radius: 0px 0px 3px 3px;
+}
+/* line 62, scss/profile.scss */
+#low-menu h1 {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  width: 250px;
+  height: auto;
+  font: 24px 'Ubuntu', sans-serif;
+  font-weight: 700;
+  color: #445566;
+  text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 2px;
+  text-align: left;
+  display: inline-block;
+  cursor: default;
+}
+/* line 75, scss/profile.scss */
+#low-menu .setting {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  padding: 5px;
+  display: inline-block;
+  float: right;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 86, scss/profile.scss */
+#low-menu .setting span {
+  padding-top: 2px;
+  margin-right: -150px;
+  float: left;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 9;
+}
+/* line 95, scss/profile.scss */
+#low-menu .setting a {
+  font: 12px Helvetica, Arial, sans-serif;
+  color: #656565;
+  vertical-align: middle;
+}
+/* line 101, scss/profile.scss */
+#low-menu .setting .icon {
+  z-index: 10;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  margin-top: 2px;
+  margin-left: 3px;
+  margin-right: 3px;
+  overflow: hidden;
+}
+/* line 111, scss/profile.scss */
+#low-menu .setting:hover {
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 113, scss/profile.scss */
+#low-menu .setting:hover span {
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-right: 1px;
+  opacity: 1;
+}
+
+/* line 123, scss/profile.scss */
+#prof-img {
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* line 129, scss/profile.scss */
+#recent-activity-con {
+  width: 315px;
+  height: auto;
+  border: 1px solid #cecece;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100, color-stop(1%, rgba(170, 170, 185, 0.1)), color-stop(100%, rgba(255, 255, 255, 0))), url("../images/bg/white2.png");
+  background-image: -webkit-linear-gradient(top, rgba(170, 170, 185, 0.1) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  background-image: -moz-linear-gradient(top, rgba(170, 170, 185, 0.1) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  background-image: -o-linear-gradient(top, rgba(170, 170, 185, 0.1) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  background-image: -ms-linear-gradient(top, rgba(170, 170, 185, 0.1) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  background-image: linear-gradient(top, rgba(170, 170, 185, 0.1) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  -moz-box-shadow: white 0px 1px 0px inset;
+  -webkit-box-shadow: white 0px 1px 0px inset;
+  -o-box-shadow: white 0px 1px 0px inset;
+  box-shadow: white 0px 1px 0px inset;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  float: right;
+  text-align: left;
+  padding: 10px 15px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 141, scss/profile.scss */
+#recent-activity-con h2 {
+  text-shadow: white 0px 1px 2px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  margin-bottom: -20px;
+  font: 26px Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: rgba(101, 101, 101, 0.9);
+  border-bottom: 1px solid rgba(206, 206, 206, 0.8);
+}
+/* line 152, scss/profile.scss */
+#recent-activity-con .recent-item {
+  width: 315px;
+  height: 70px;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  float: left;
+  display: inline-block;
+  border-bottom: 1px solid rgba(206, 206, 206, 0.5);
+}
+/* line 161, scss/profile.scss */
+#recent-activity-con .recent-item .act-content {
+  width: 250px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+  float: left;
+  text-align: left;
+  font: 12px Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-shadow: white 0px 1px 2px;
+  color: rgba(101, 101, 101, 0.7);
+  display: inline-block;
+}
+/* line 173, scss/profile.scss */
+#recent-activity-con .recent-item .act-content h3 {
+  font: 18px Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-shadow: white 0px 1px 2px;
+  color: #445566;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+}
+/* line 186, scss/profile.scss */
+#recent-activity-con .recent-item .pIcon {
+  width: 40px;
+  height: 40px;
+}
+/* line 189, scss/profile.scss */
+#recent-activity-con .recent-item .pIcon-con {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  margin-right: 12px;
+  float: left;
+  display: inline-block;
+}
+/* line 199, scss/profile.scss */
+#recent-activity-con .top {
+  margin-top: 20px;
+}
+
+/* line 204, scss/profile.scss */
+#mid {
+  margin: 0 auto 0;
+  width: 962px;
+  height: auto;
+  padding: 0;
+}
+
+/* line 210, scss/profile.scss */
+#games-con {
+  width: 600px;
+  height: auto;
+  min-height: 300px;
+  height: auto !important;
+  height: 300px;
+  margin: 0 auto 0;
+  padding: 0;
+  float: left;
+}
+
+/* line 217, scss/profile.scss */
+#comment-box-con {
+  width: 580px;
+  height: auto;
+  min-height: 300px;
+  height: auto !important;
+  height: 300px;
+  margin: 0px;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 20px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100, color-stop(1%, rgba(170, 170, 185, 0.1)), color-stop(100%, rgba(255, 255, 255, 0))), url("../images/bg/white2.png");
+  background-image: -webkit-linear-gradient(top, rgba(170, 170, 185, 0.1) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  background-image: -moz-linear-gradient(top, rgba(170, 170, 185, 0.1) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  background-image: -o-linear-gradient(top, rgba(170, 170, 185, 0.1) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  background-image: -ms-linear-gradient(top, rgba(170, 170, 185, 0.1) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  background-image: linear-gradient(top, rgba(170, 170, 185, 0.1) 1px, rgba(255, 255, 255, 0) 100px), url("../images/bg/white2.png");
+  -moz-box-shadow: white 0px 1px 0px inset;
+  -webkit-box-shadow: white 0px 1px 0px inset;
+  -o-box-shadow: white 0px 1px 0px inset;
+  box-shadow: white 0px 1px 0px inset;
+  border: 1px solid #cecece;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 227, scss/profile.scss */
+#comment-box-con h1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 0px !important;
+  margin-top: -3px !important;
+  padding-bottom: 10px !important;
+}
+
+/* line 235, scss/profile.scss */
+#comment-box {
+  width: 580px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-top: 5px;
+}
+/* line 241, scss/profile.scss */
+#comment-box #enter_comment {
+  width: 570px;
+  height: 30px;
+  margin: 0 auto 0;
+  padding: 5px;
+  background: url("../images/bg/white3.png");
+  font: 12px Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+/* line 251, scss/profile.scss */
+#comment-box #comment_submit {
+  color: rgba(77, 77, 77, 0.9);
+  font: 12px 'Ubuntu', sans-serif;
+  border: 1px solid #cecece;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 75, color-stop(0%, rgba(170, 170, 170, 0.1)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(170, 170, 170, 0.1) 0px, rgba(255, 255, 255, 0) 75px);
+  background-image: -moz-linear-gradient(top, rgba(170, 170, 170, 0.1) 0px, rgba(255, 255, 255, 0) 75px);
+  background-image: -o-linear-gradient(top, rgba(170, 170, 170, 0.1) 0px, rgba(255, 255, 255, 0) 75px);
+  background-image: -ms-linear-gradient(top, rgba(170, 170, 170, 0.1) 0px, rgba(255, 255, 255, 0) 75px);
+  background-image: linear-gradient(top, rgba(170, 170, 170, 0.1) 0px, rgba(255, 255, 255, 0) 75px);
+  height: 28px;
+  padding: 0px 10px 2px 10px;
+  margin: 0px;
+  outline: 0px none;
+  white-space: nowrap;
+  word-wrap: normal;
+  cursor: pointer;
+}
+/* line 267, scss/profile.scss */
+#comment-box #comment-area {
+  width: 580px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+/* line 272, scss/profile.scss */
+#comment-box #comment-area .comment {
+  width: 568px;
+  height: auto;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(206, 206, 206, 0.7);
+  font: 12px Helvetica, Arial, sans-serif;
+  display: inline-block;
+  -moz-box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 0px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 0px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 0px inset;
+  box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 0px inset;
+}
+/* line 283, scss/profile.scss */
+#comment-box #comment-area .comment h3 {
+  margin: 0;
+  padding: 0;
+  font: 12px 'Ubuntu', sans-serif;
+  font-weight: 300;
+  text-shadow: white 0px 1px 2px;
+  color: #445566;
+  display: inline-block;
+  padding: 3px;
+  margin-right: 5px;
+  border-right: 1px solid #cecece;
+}
+
+/* line 298, scss/profile.scss */
+.active {
+  height: 80px !important;
+  border-color: rgba(63, 118, 183, 0.6) !important;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px inset;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+/* line 305, scss/profile.scss */
+#games-con h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: -10px;
+  padding-top: 10px;
+  font: 26px Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-shadow: white 0px 1px 2px;
+  color: rgba(101, 101, 101, 0.9);
+}
+
+/* line 315, scss/profile.scss */
+.games-item {
+  border: 1px solid #cecece;
+  background: url("../images/bg/white-less.png");
+  height: 156px;
+  width: 276px;
+  float: left;
+  margin: 0;
+  padding: 6px;
+}
+
+/* line 325, scss/profile.scss */
+.games-item img {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* line 331, scss/profile.scss */
+.games-item img:hover {
+  opacity: 1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* line 336, scss/profile.scss */
+.gamesitem-con {
+  padding: 0;
+  margin-top: 20px;
+  height: 169px;
+  width: 289px;
+  float: left;
+}
+
+/* line 344, scss/profile.scss */
+.left {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+/* line 348, scss/profile.scss */
+.right {
+  margin-right: 0px;
+  margin-left: 0px;
+  float: right;
+}
+
+/* line 354, scss/profile.scss */
+#set-gear {
+  padding: 0;
+  margin: 0;
+  margin-right: 6px;
+}
+
+/* line 360, scss/profile.scss */
+#body-con {
+  padding: 0;
+  margin: 0 auto;
+  width: 960px;
+}
+
+/* line 366, scss/profile.scss */
+#main-one {
+  width: 960px;
+  height: 300px;
+  margin-top: 20px;
+  background: url("../images/bg/white3.png") repeat scroll 0% 0% transparent;
+  border: 1px solid #cecece;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 374, scss/profile.scss */
+#prof-img-con {
+  float: left;
+  box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.15);
+  z-index: 3;
+}
+
+/* line 380, scss/profile.scss */
+#main-cont {
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 960px;
+  height: 300px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}

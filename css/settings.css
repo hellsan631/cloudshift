@@ -1,0 +1,309 @@
+@charset "utf-8";
+/* CSS Document */
+/* line 4, scss/settings.scss */
+body {
+  background: url("../images/bg/noise.png");
+  margin: 0;
+  padding: 0;
+  color: #656565;
+}
+
+/* line 11, scss/settings.scss */
+#bodycon {
+  width: 100%;
+}
+
+/* line 15, scss/settings.scss */
+#page-con {
+  width: 960px;
+  height: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  background: rgba(248, 248, 255, 0.25);
+}
+
+/* line 24, scss/settings.scss */
+#settings-menu-con {
+  padding: 0;
+  width: 229px;
+  height: 600px;
+  opacity: 0.95;
+  margin: 0 auto;
+  margin-top: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  z-index: 3;
+  background: -webkit-gradient(linear, left top, left 25, rgba(255, 255, 255, 0), color-stop(100%, rgba(170, 170, 170, 0.075)), to(rgba(255, 255, 255, 0)));
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(170, 170, 170, 0.075) 1px, rgba(255, 255, 255, 0) 50px);
+}
+/* line 39, scss/settings.scss */
+#settings-menu-con .selected {
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.225);
+  background: url("../images/bg/white.png");
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* line 46, scss/settings.scss */
+#settings-con {
+  padding: 0;
+  width: 728px;
+  height: 600px;
+  opacity: 0.95;
+  margin: 0 auto;
+  margin-top: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-top: none;
+  border-bottom: none;
+  z-index: 3;
+  background: -webkit-gradient(linear, left top, left 25, rgba(255, 255, 255, 0), color-stop(100%, rgba(170, 170, 170, 0.075)), to(rgba(255, 255, 255, 0)));
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(170, 170, 170, 0.075) 1px, rgba(255, 255, 255, 0) 50px);
+}
+
+/* line 61, scss/settings.scss */
+.title {
+  padding: 20px;
+  padding-left: 32px;
+  margin: 0;
+  width: auto;
+  height: 13px;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* line 73, scss/settings.scss */
+.bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 2px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* line 78, scss/settings.scss */
+.oops {
+  width: auto;
+  height: 20px;
+}
+
+/* line 83, scss/settings.scss */
+hr {
+  height: 1px;
+  width: 90%;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+  background: none repeat scroll 0% 0% transparent;
+}
+
+/* line 92, scss/settings.scss */
+h2 {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  color: rgba(101, 101, 101, 0.925);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  float: left;
+  text-align: start;
+}
+
+/* line 103, scss/settings.scss */
+h3 {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  color: rgba(101, 101, 101, 0.925);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  text-align: start;
+}
+
+/* line 113, scss/settings.scss */
+#settings-options {
+  padding: 35px;
+  padding-top: 20px;
+}
+
+/* line 118, scss/settings.scss */
+.setCon {
+  padding: 0;
+  margin: 0;
+  text-align: start;
+  display: inline-block;
+}
+
+/* line 125, scss/settings.scss */
+.seperator {
+  width: 100%;
+  height: 2px;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 132, scss/settings.scss */
+.setTitle {
+  padding: 20px;
+  padding-left: 0px;
+  text-align: left;
+  width: 100px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* line 142, scss/settings.scss */
+.setInfo {
+  padding: 20px;
+  padding-left: 0px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  text-align: left;
+  width: 475px;
+}
+
+/* line 151, scss/settings.scss */
+.smallImg {
+  width: 75px;
+  height: 75px;
+}
+
+/* line 156, scss/settings.scss */
+.setSmall {
+  font-size: 10px;
+  line-height: 16px;
+  color: rgba(101, 101, 101, 0.7);
+}
+
+/* line 162, scss/settings.scss */
+.setNormal {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* line 167, scss/settings.scss */
+.setSmallLink {
+  font-size: 10px;
+  line-height: 16px;
+  color: #1c62b9;
+}
+
+/* line 173, scss/settings.scss */
+a {
+  text-decoration: none;
+  color: #1c62b9;
+}
+
+/* line 178, scss/settings.scss */
+.item-menu {
+  padding: 10px;
+  padding-left: 50px;
+  margin: 0;
+  width: auto;
+  height: 13px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  text-shadow: none;
+}
+
+/* line 189, scss/settings.scss */
+#save {
+  padding: 0px;
+  padding-bottom: 2px;
+  margin: 0px;
+  float: right;
+  height: 2.95em;
+  width: 5em;
+  font: 11px arial,sans-serif;
+  font-weight: bold;
+  color: white;
+  border: 1px solid;
+  outline: 0px none;
+  white-space: nowrap;
+  word-wrap: normal;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 2px 2px 2px 2px;
+  background-color: #6891e7;
+  border-color: #0053a6 #0053a6 black;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.35) inset;
+  background-image: -moz-linear-gradient(center top, #4495e7 0px, #0053a6 100%);
+}
+
+/* line 223, scss/settings.scss */
+#save:hover {
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+}
+
+/* line 227, scss/settings.scss */
+#save:ACTIVE {
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* line 232, scss/settings.scss */
+#save-content {
+  font-weight: bold;
+  white-space: nowrap;
+  word-wrap: normal;
+  cursor: pointer;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 240, scss/settings.scss */
+#settings-header {
+  height: 30px;
+  margin-top: 24px;
+  margin-right: 35px;
+  margin-lefT: 35px;
+  width: 90%;
+  text-align: start;
+}
+
+/* line 249, scss/settings.scss */
+.item-menu:hover {
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.225);
+  background: url("../images/bg/white.png");
+  cursor: pointer;
+}
+
+/* line 255, scss/settings.scss */
+label {
+  margin: 9px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(101, 101, 101, 0.85);
+}
+
+/* line 263, scss/settings.scss */
+.setting {
+  height: 35px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 271, scss/settings.scss */
+#main {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  background: url("../images/bg/white-less.png");
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d8dde1;
+  width: 960px;
+  height: 750px;
+}
+
+/* line 282, scss/settings.scss */
+.right {
+  float: right;
+}
+
+/* line 286, scss/settings.scss */
+.left {
+  float: left;
+}

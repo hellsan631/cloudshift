@@ -1,0 +1,22 @@
+.icon-comments,.icon-user,.icon-cog,.icon-minus,.icon-plus {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(sprites.png);
+	background-repeat: no-repeat;
+}
+.icon-comments {
+	background-position: 0 0;
+}
+.icon-user {
+	background-position: -32px 0;
+}
+.icon-cog {
+	background-position: -64px 0;
+}
+.icon-minus {
+	background-position: -96px 0;
+}
+.icon-plus {
+	background-position: -128px 0;
+}

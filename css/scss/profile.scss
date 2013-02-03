@@ -1,0 +1,387 @@
+@import "functions";
+
+.icon-comments,.icon-user,.icon-cog,.icon-minus,.icon-plus {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('../images/ui/sprites.png');
+	background-repeat: no-repeat;
+}
+.icon-comments {
+	background-position: 0 0;
+}
+.icon-user {
+	background-position: -32px 0;
+}
+.icon-cog {
+	background-position: -64px 0;
+}
+.icon-minus {
+	background-position: -96px 0;
+}
+.icon-plus {
+	background-position: -128px 0;
+}
+
+
+body{
+	@include bgurl("noise.png", 'true');
+	color:rgba(101,101,101,1);
+	@include zero;
+}
+
+div{
+	@include zero;
+}
+
+a{
+	color: rgba(68, 85, 102,1);
+}
+
+#avatar-con{
+	float:left;
+	margin-top:72px;
+	margin-left:72px;
+	border: 3px solid rgba(white,1);
+	@include border-radius(2px);
+
+	#useravatar{
+		@include dimentions(150px,150px);
+	}
+}
+
+#low-menu{
+	background: url('../images/bg/white2.png');
+	@include background-image(linear-gradient(top, rgba(170,170,170,0.2) 1px ,rgba(255,255,255,0) 100px), url('../images/bg/white2.png'));
+	@include dimentions(938px,28px);
+	@include zero;
+	padding:11px;
+	margin-top:250px;
+	@include border-radius(0px 0px 3px 3px);
+
+	h1{
+		@include zero;
+		margin-left:10px;
+		@include dimentions(250px,auto);
+		font: 24px 'Ubuntu', sans-serif;
+		font-weight: 700;
+    	color: rgb(68, 85, 102);
+		@include text-shadow(rgba(white, 0.8) 0px 1px 2px);
+	    text-align:left;
+	    display:inline-block;
+	    cursor:default;
+	}
+
+	.setting{
+		@include dimentions(auto,auto);
+		@include zero;
+		padding:5px;
+		display:inline-block;
+		float:right;
+		border-left:1px solid rgba(black,0.15);
+		overflow:hidden;
+		@include transition(all 0.4s ease);
+		@include border-radius(3px);
+
+		span{
+			padding-top:2px;
+			margin-right:-150px;
+			float:left;
+			overflow:hidden;
+			opacity:0;
+			z-index:9;
+		}
+
+		a{
+			font: 12px Helvetica, Arial, sans-serif;
+			color: rgb(101,101,101);
+			vertical-align:middle;
+		}
+
+		.icon{
+			z-index:10;
+			vertical-align:middle;
+			@include zero;
+			margin-top:2px;
+			margin-left:3px;
+			margin-right:3px;
+			overflow:hidden;
+		}
+
+		&:hover{
+			@include transition(all 0.4s ease);
+			span{
+				@include transition(all 0.4s ease);
+				margin-right:1px;
+				opacity:1;
+			}
+		}
+
+	}
+}
+
+#prof-img{
+	@include dimentions(300px,300px);
+	@include zero;
+	border:none;
+}
+
+#recent-activity-con{
+	@include dimentions(315px,auto);
+	border: 1px solid rgba($border, 1);
+	@include background-image(linear-gradient(top, rgba(170,170,185,0.10) 1px ,rgba(255,255,255,0) 100px), url('../images/bg/white2.png'));
+	@include box-shadow(rgba(255,255,255,1) 0px 1px 0px inset);
+	@include zero;
+	margin-top:10px;
+	float:right;
+	text-align:left;
+	padding:10px 15px;
+	@include border-radius(3px);
+
+	h2{
+		@include text-shadow(rgba(255, 255, 255, 1) 0px 1px 2px);
+		@include zero;
+		padding-bottom:5px;
+		margin-bottom:-20px;
+		font: 26px Helvetica, Arial, sans-serif;
+		font-weight: 700;
+		color:rgba(101,101,101,0.9);
+		border-bottom: 1px solid rgba($border, 0.8);
+	}
+
+	.recent-item{
+		@include dimentions(315px,70px);
+		margin:0;
+		margin-bottom:5px;
+		padding:0;
+		float:left;
+		display:inline-block;
+		border-bottom: 1px solid rgba($border, 0.5);
+
+		.act-content{
+			@include dimentions(250px,40px);
+			@include zero;
+			margin-top:14px;
+			float:left;
+			text-align:left;
+			font: 12px Helvetica, Arial, sans-serif;
+			font-weight: 400;
+			@include text-shadow(rgba(255, 255, 255, 1) 0px 1px 2px);
+			color:rgba(101,101,101,0.7);
+			display:inline-block;
+
+			h3{
+				font: 18px Helvetica, Arial, sans-serif;
+				font-weight: 700;
+				@include text-shadow(rgba(255, 255, 255, 1) 0px 1px 2px);
+				color: rgba(68, 85, 102,1);
+				margin-top:0px;
+				margin-bottom:4px;
+				padding:0;
+				overflow:hidden;
+				text-align:left;
+			}
+		}
+
+		.pIcon{
+			@include dimentions(40px,40px);
+		}
+		.pIcon-con{
+			@include dimentions(40px,40px);
+			@include zero;
+			margin-top:15px;
+			margin-right:12px;
+			float:left;
+			display:inline-block;
+		}
+	}
+
+	.top{margin-top:20px;}
+}
+
+
+
+#mid{
+	@include centerthis;
+	@include dimentions(962px,auto);
+	padding:0;
+}
+
+#games-con{
+	@include dimentions(600px,auto,none,300px);
+	@include centerthis;
+	padding:0;
+	float:left;
+}
+
+#comment-box-con{
+	@include dimentions(580px,auto,none,300px);
+	@include zero(0px, 10px);
+	display:inline-block;
+	margin-top:20px;
+	@include background-image(linear-gradient(top, rgba(170,170,185,0.1) 1px ,rgba(255,255,255,0) 100px), url('../images/bg/white2.png'));
+	@include box-shadow(rgba(255,255,255,1) 0px 1px 0px inset);
+	border: 1px solid rgba($border, 1);
+	@include border-radius(3px);
+
+	h1{
+		@include zero;
+		padding-top:0px !important;
+		margin-top:-3px !important;
+		padding-bottom:10px !important;
+	}
+}
+
+#comment-box{
+	@include dimentions(580px,auto);
+	@include zero;
+	display:inline-block;
+	margin-top:5px;
+
+	#enter_comment{
+		@include dimentions(570px,30px);
+		@include centerthis;
+		padding:5px;
+		background: url('../images/bg/white3.png');
+		font: 12px Helvetica, Arial, sans-serif;
+		margin-bottom:10px;
+		@include transition(all 0.30s ease-in);
+	}
+
+	#comment_submit{
+
+		color:rgba(77,77,77,0.9);
+		font: 12px 'Ubuntu', sans-serif;
+	    border: 1px solid rgba($border, 1);
+	    @include background-image(linear-gradient(top, rgba(170,170,170,0.1) 0px ,rgba(255,255,255,0) 75px));
+	    height: 28px;
+	    padding: 0px 10px 2px 10px;
+	    margin: 0px;
+	    outline: 0px none;
+	    white-space: nowrap;
+	    word-wrap: normal;
+	    cursor: pointer;
+
+	}
+
+	#comment-area{
+		@include dimentions(580px,auto);
+		@include zero;
+		display:inline-block;
+
+		.comment{
+			@include dimentions(568px,auto);
+			padding:5px;
+			margin-top:10px;
+			margin-bottom:10px;
+			border-bottom: 1px solid rgba($border, 0.7);
+			font: 12px Helvetica, Arial, sans-serif;
+			display:inline-block;
+			//background: url('../images/bg/white3.png');
+			@include box-shadow(rgba(white, 0.9) 0px 1px 0px inset);
+
+			h3{
+				@include zero;
+				font: 12px 'Ubuntu', sans-serif;
+				font-weight: 300;
+				@include text-shadow(rgba(255, 255, 255, 1) 0px 1px 2px);
+				color: rgba(68, 85, 102,1);
+				display:inline-block;
+				padding:3px;
+				margin-right:5px;
+				border-right: 1px solid rgba($border, 1);
+			}
+		}
+	}
+}
+
+.active{
+	height:80px !important;
+    border-color: rgba(63, 118, 183,0.6) !important;
+    @include box-shadow(rgba(black, 0.1) 0px 1px 2px inset);
+    @include transition(all 0.30s ease-in);
+}
+
+#games-con h1{
+	@include zero;
+	margin-bottom:-10px;
+	padding-top:10px;
+	font: 26px Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	@include text-shadow(rgba(255, 255, 255, 1) 0px 1px 2px);
+	color:rgba(101,101,101,0.9);
+}
+
+.games-item{
+	border: 1px solid rgba($border, 1);
+	background: url('../images/bg/white-less.png');
+	height:156px;
+	width:276px;
+	float:left;
+	margin:0;
+	padding:6px;
+}
+
+.games-item img{
+	border: 1px solid rgba(black, 0.1);
+	cursor:pointer;
+	opacity:0.8;
+}
+
+.games-item img:hover{
+	opacity:1;
+	border: 1px solid rgba(black, 0.2);
+}
+
+.gamesitem-con{
+	padding:0;
+	margin-top:20px;
+	height:169px;
+	width:289px;
+	float:left;
+}
+
+.left{
+	margin-left:0px;
+	margin-right:20px;
+}
+.right{
+	margin-right:0px;
+	margin-left:0px;
+	float:right;
+}
+
+#set-gear{
+	padding:0;
+	margin:0;
+	margin-right:6px;
+}
+
+#body-con{
+	padding:0;
+	margin:0 auto;
+	width:960px;
+}
+
+#main-one{
+	@include dimentions(960px,300px);
+	margin-top:20px;
+	@include bgurl("white3.png", 'true');
+    border: 1px solid rgba($border, 1);
+    @include border-radius(3px);
+}
+
+#prof-img-con{
+	float:left;
+	box-shadow: 1px 0px 0px rgba(0,0,0,0.15);
+	z-index:3;
+}
+
+#main-cont{
+	float:left;
+	padding:0;
+	margin:0;
+	width:960px;
+	height:300px;
+	@include border-radius(3px);
+}
