@@ -6,6 +6,7 @@ body{
 	margin:0;
 	padding:0;
 	color: rgba(101,101,101,1);
+	margin-top:60px;
 }
 
 #bodycon{
@@ -43,10 +44,10 @@ body{
 	}
 }
 
-#settings-con{
+.settingsCon{
 	padding:0;
 	width:728px;
-	height:600px;
+	height:auto;
 	opacity:0.95;
 	margin:0 auto;
 	margin-top:1px;
@@ -110,7 +111,7 @@ h3{
 	text-align: start;
 }
 
-#settings-options{
+.options{
 	padding:35px;
 	padding-top:20px;
 }
@@ -150,7 +151,12 @@ h3{
 
 .smallImg{
 	width:75px;
-	height:75px;
+	height:auto;
+}
+
+.bgImg{
+	width:500px;
+	height:auto;
 }
 
 .setSmall{
@@ -237,7 +243,7 @@ a {
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
 }
 
-#settings-header{
+.settingsHeader{
 	height: 30px;
 	margin-top:24px;
 	margin-right:35px;

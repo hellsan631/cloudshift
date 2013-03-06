@@ -45,7 +45,7 @@ function lname($cuser){
     		<div class="title">
     			Account Settings
     		</div>
-    		<div class="item-menu selected">
+    		<div id="acct-over" class="item-menu selected">
     			Overview
     		</div>
     		<div class="item-menu">
@@ -70,13 +70,22 @@ function lname($cuser){
     		<div class="item-menu">
     			Privacy
     		</div>
+    		<div class="oops"></div>
+    		<div class="title bottom">
+    			Games
+    		</div>
+    		<div id="game-man" class="item-menu">
+    			Manage Games
+    		</div>
     	</div>
-    	<div id="settings-con" class="right">
-    		<div id="settings-header">
+
+    	<!-- SETTINGS -->
+    	<div id="account-con" class="right settingsCon">
+    		<div class="settingsHeader">
 	    		<h2>Overview</h2>
     		</div>
     		<hr />
-    		<div id="settings-options">
+    		<div class="options" id="account-options">
     			<h3>Account Information</h3>
     			<div class="setCon">
     				<div class="setTitle left">
@@ -121,6 +130,40 @@ function lname($cuser){
     			<?php endif ?>
     		</div>
     	</div>
+		<!-- SETTINGS END -->
+
+    	<!-- GAMES -->
+    	<div id="games-con" class="right settingsCon">
+    		<div class="settingsHeader" id="games-header">
+	    		<h2>Manage Games</h2>
+    		</div>
+
+    		<hr />
+
+    		<div class="options" id="games-options">
+
+    			<h3>Starcraft 2</h3>
+
+    			<div class="setCon">
+    				<div class="setTitle left">
+    					Identity
+    				</div>
+    				<div class="setInfo right">
+    					<input type="text" id="SCID" class="passBox" value="<?php echo "Enter SC2 Link ID"; ?>"/><br/>
+    					<a href="#" id="setSCLink" class="setSmallLink">Set Info</a>
+    				</div>
+    				<div class="setCon">
+	    				<div class="setTitle left">
+	    					Results
+	    				</div>
+	    				<div class="setInfo right">
+	    					<div id="gameAjaxRes" class="setNormal"></div>
+	    				</div>
+	    			</div>
+    			</div>
+    		</div>
+    	</div>
+		<!-- Games END -->
 
     </div>
 </div>
@@ -187,8 +230,46 @@ function lname($cuser){
 <script src="./js/ui/popup.js"></script>
 <script src="./js/ui/ajaxsbmt.js"></script>
 <script>
+
+var $currentPick = $("#account-con");
+var $curmenuitem = $("#acct-over");
+
 $(document).ready(function(){
 	//popup button events
+
+	$("#games-con").hide();
+
+	$("#setSCLink").click(function(){
+		var $scid = $("#SCID").val();
+		$.ajax({ url: '_listeners/listn.settingsGame.php',
+			  type: 'post',
+			  cache: false,
+			  data: {submitType: '0', SCID: $scid},
+			  success: function(data) {
+				  setTimeout(function() {
+					  $("#gameAjaxRes").html("Success!");
+				  }, 400);
+			  }
+		});
+	});
+
+	$("#game-man").click(function(){
+		$curmenuitem.removeClass('selected');
+		$(this).addClass('selected');
+		$curmenuitem = this;
+		$currentPick.hide(200);
+		$("#games-con").show(200);
+		$currentPick = $("#games-con");
+	});
+
+	$("#acct-over").click(function(){
+		$curmenuitem.removeClass('selected');
+		$(this).addClass('selected');
+		$curmenuitem = this;
+		$currentPick.hide(200);
+		$("#account-con").show(200);
+		$currentPick = $("#account-con");
+	});
 
 	$("#changepass").click(function(){
 		//centering with css
@@ -225,7 +306,21 @@ $(document).ready(function(){
 });
 
 function closePops(){disablePopup();}
-
+$("#SCID")
+.focus(function() {
+      if (this.value === this.defaultValue) {
+          this.value = '';
+			this.type = 'password';
+			$("#SCID").addClass("hovered");
+      }
+})
+.blur(function() {
+      if (this.value === '') {
+          this.value = this.defaultValue;
+			this.type = 'text';
+			$("#SCID").removeClass("hovered");
+      }
+});
 $("#oldPass")
 .focus(function() {
       if (this.value === this.defaultValue) {

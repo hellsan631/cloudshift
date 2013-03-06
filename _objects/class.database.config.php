@@ -12,10 +12,11 @@
 class config{
 
 	//database access settings (should improve this with inclusion of 'port')
-	protected static $host     = "127.0.0.1";
-	protected static $username = "admin";
-	protected static $password = "hellsan631";
-	protected static $database = "logos";
+	public static $host     = "127.0.0.1";
+	//protected static $host     = "hellsan631.dyndns.tv";
+	public static $username = "admin";
+	public static $password = "hellsan631";
+	public static $database = "logos";
 
 }
 

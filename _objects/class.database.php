@@ -7,6 +7,7 @@
  * 			Changed Behavior of static classes to use DB_LINK if $link_id is null
  * 0.0.3 - Return False instead of Throwing MISC DB Errors
  * 0.0.4 - Performance and Memory Usage Improvements
+ * 0.0.5 - Added Hotfixed Mail to this file
  *
  * @TODO Errors should be logged in this class via global variable ERROR_REPORTING = 1.
  */
@@ -277,10 +278,10 @@ class DB extends config{
 	 */
 	private static function _sql_error($errorTxt = ''){
 
-		//tryquit($errorTxt, 'MYSQL');
+		tryquit($errorTxt, 'MYSQL');
 
-		return false;
-		//self::_sql_close();
+		//return false;
+		self::_sql_close();
 
 	}
 

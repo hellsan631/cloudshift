@@ -198,7 +198,6 @@ class user{
 	  	WHERE `id` = '$user_id'";
 
 	  	if(DB::sql($query)){
-	  		$_SESSION['user_id'] = $user_id;
 	  		return true;
 	  	}
 

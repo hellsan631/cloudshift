@@ -6,14 +6,15 @@ body {
   margin: 0;
   padding: 0;
   color: #656565;
+  margin-top: 60px;
 }
 
-/* line 11, scss/settings.scss */
+/* line 12, scss/settings.scss */
 #bodycon {
   width: 100%;
 }
 
-/* line 15, scss/settings.scss */
+/* line 16, scss/settings.scss */
 #page-con {
   width: 960px;
   height: 1000px;
@@ -23,7 +24,7 @@ body {
   background: rgba(248, 248, 255, 0.25);
 }
 
-/* line 24, scss/settings.scss */
+/* line 25, scss/settings.scss */
 #settings-menu-con {
   padding: 0;
   width: 229px;
@@ -39,18 +40,18 @@ body {
   background: -webkit-gradient(linear, left top, left 25, rgba(255, 255, 255, 0), color-stop(100%, rgba(170, 170, 170, 0.075)), to(rgba(255, 255, 255, 0)));
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(170, 170, 170, 0.075) 1px, rgba(255, 255, 255, 0) 50px);
 }
-/* line 39, scss/settings.scss */
+/* line 40, scss/settings.scss */
 #settings-menu-con .selected {
   box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.225);
   background: url("../images/bg/white.png");
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-/* line 46, scss/settings.scss */
-#settings-con {
+/* line 47, scss/settings.scss */
+.settingsCon {
   padding: 0;
   width: 728px;
-  height: 600px;
+  height: auto;
   opacity: 0.95;
   margin: 0 auto;
   margin-top: 1px;
@@ -62,7 +63,7 @@ body {
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(170, 170, 170, 0.075) 1px, rgba(255, 255, 255, 0) 50px);
 }
 
-/* line 61, scss/settings.scss */
+/* line 62, scss/settings.scss */
 .title {
   padding: 20px;
   padding-left: 32px;
@@ -75,19 +76,19 @@ body {
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
 }
 
-/* line 73, scss/settings.scss */
+/* line 74, scss/settings.scss */
 .bottom {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   box-shadow: inset 0px 2px 1px rgba(255, 255, 255, 0.2);
 }
 
-/* line 78, scss/settings.scss */
+/* line 79, scss/settings.scss */
 .oops {
   width: auto;
   height: 20px;
 }
 
-/* line 83, scss/settings.scss */
+/* line 84, scss/settings.scss */
 hr {
   height: 1px;
   width: 90%;
@@ -97,7 +98,7 @@ hr {
   background: none repeat scroll 0% 0% transparent;
 }
 
-/* line 92, scss/settings.scss */
+/* line 93, scss/settings.scss */
 h2 {
   margin: 0px;
   padding: 0px;
@@ -109,7 +110,7 @@ h2 {
   text-align: start;
 }
 
-/* line 103, scss/settings.scss */
+/* line 104, scss/settings.scss */
 h3 {
   margin: 0px;
   padding: 0px;
@@ -120,13 +121,13 @@ h3 {
   text-align: start;
 }
 
-/* line 113, scss/settings.scss */
-#settings-options {
+/* line 114, scss/settings.scss */
+.options {
   padding: 35px;
   padding-top: 20px;
 }
 
-/* line 118, scss/settings.scss */
+/* line 119, scss/settings.scss */
 .setCon {
   padding: 0;
   margin: 0;
@@ -134,7 +135,7 @@ h3 {
   display: inline-block;
 }
 
-/* line 125, scss/settings.scss */
+/* line 126, scss/settings.scss */
 .seperator {
   width: 100%;
   height: 2px;
@@ -142,7 +143,7 @@ h3 {
   margin: 0;
 }
 
-/* line 132, scss/settings.scss */
+/* line 133, scss/settings.scss */
 .setTitle {
   padding: 20px;
   padding-left: 0px;
@@ -153,7 +154,7 @@ h3 {
   line-height: 16px;
 }
 
-/* line 142, scss/settings.scss */
+/* line 143, scss/settings.scss */
 .setInfo {
   padding: 20px;
   padding-left: 0px;
@@ -163,39 +164,45 @@ h3 {
   width: 475px;
 }
 
-/* line 151, scss/settings.scss */
+/* line 152, scss/settings.scss */
 .smallImg {
   width: 75px;
-  height: 75px;
+  height: auto;
 }
 
-/* line 156, scss/settings.scss */
+/* line 157, scss/settings.scss */
+.bgImg {
+  width: 500px;
+  height: auto;
+}
+
+/* line 162, scss/settings.scss */
 .setSmall {
   font-size: 10px;
   line-height: 16px;
   color: rgba(101, 101, 101, 0.7);
 }
 
-/* line 162, scss/settings.scss */
+/* line 168, scss/settings.scss */
 .setNormal {
   font-size: 12px;
   line-height: 16px;
 }
 
-/* line 167, scss/settings.scss */
+/* line 173, scss/settings.scss */
 .setSmallLink {
   font-size: 10px;
   line-height: 16px;
   color: #1c62b9;
 }
 
-/* line 173, scss/settings.scss */
+/* line 179, scss/settings.scss */
 a {
   text-decoration: none;
   color: #1c62b9;
 }
 
-/* line 178, scss/settings.scss */
+/* line 184, scss/settings.scss */
 .item-menu {
   padding: 10px;
   padding-left: 50px;
@@ -207,7 +214,7 @@ a {
   text-shadow: none;
 }
 
-/* line 189, scss/settings.scss */
+/* line 195, scss/settings.scss */
 #save {
   padding: 0px;
   padding-bottom: 2px;
@@ -233,17 +240,17 @@ a {
   background-image: -moz-linear-gradient(center top, #4495e7 0px, #0053a6 100%);
 }
 
-/* line 223, scss/settings.scss */
+/* line 229, scss/settings.scss */
 #save:hover {
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
 }
 
-/* line 227, scss/settings.scss */
+/* line 233, scss/settings.scss */
 #save:ACTIVE {
   box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5);
 }
 
-/* line 232, scss/settings.scss */
+/* line 238, scss/settings.scss */
 #save-content {
   font-weight: bold;
   white-space: nowrap;
@@ -252,8 +259,8 @@ a {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* line 240, scss/settings.scss */
-#settings-header {
+/* line 246, scss/settings.scss */
+.settingsHeader {
   height: 30px;
   margin-top: 24px;
   margin-right: 35px;
@@ -262,14 +269,14 @@ a {
   text-align: start;
 }
 
-/* line 249, scss/settings.scss */
+/* line 255, scss/settings.scss */
 .item-menu:hover {
   box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.225);
   background: url("../images/bg/white.png");
   cursor: pointer;
 }
 
-/* line 255, scss/settings.scss */
+/* line 261, scss/settings.scss */
 label {
   margin: 9px;
   font-family: 'Ubuntu', sans-serif;
@@ -278,7 +285,7 @@ label {
   color: rgba(101, 101, 101, 0.85);
 }
 
-/* line 263, scss/settings.scss */
+/* line 269, scss/settings.scss */
 .setting {
   height: 35px;
   width: 100%;
@@ -286,7 +293,7 @@ label {
   margin: 0;
 }
 
-/* line 271, scss/settings.scss */
+/* line 277, scss/settings.scss */
 #main {
   padding: 0;
   margin: 0;
@@ -298,12 +305,12 @@ label {
   height: 750px;
 }
 
-/* line 282, scss/settings.scss */
+/* line 288, scss/settings.scss */
 .right {
   float: right;
 }
 
-/* line 286, scss/settings.scss */
+/* line 292, scss/settings.scss */
 .left {
   float: left;
 }

@@ -83,6 +83,9 @@
     @include bgurl("white-less.png", 'true');
 	@include box-shadow(rgba(255,255, 255, 0.7) 0 2px 0 inset);
 	border: 1px solid rgba($border, 1);
+	position:fixed;
+	margin-top:-55px;
+	z-index:10;
 }
 
 #head-color{
@@ -90,13 +93,14 @@
 	padding:0;
 	@include dimentions(100%,5px);
 	@include bgurl("off-red.png", 'true');
-	z-index:-1;
+	z-index:9;
+	position:fixed;
+	margin-top:-60px;
 }
 
 #head-con{
 	@include dimentions(100%,5px);
 	@include background-image(linear-gradient(top, rgba(255,255,255,0.15) 0, rgba(170,170,170,0.0) 5px));
-	z-index:0;
 }
 
 #menu-con-t{

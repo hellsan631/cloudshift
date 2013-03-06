@@ -9,9 +9,10 @@ body {
   color: #656565;
   margin: 0;
   padding: 0;
+  margin-top: 60px;
 }
 
-/* line 12, scss/connect.scss */
+/* line 13, scss/connect.scss */
 div {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -19,7 +20,7 @@ div {
   text-shadow: rgba(255, 255, 255, 0.75) 1px 1px 0;
 }
 
-/* line 19, scss/connect.scss */
+/* line 20, scss/connect.scss */
 h2 {
   font-size: 22px;
   line-height: 28px;
@@ -30,14 +31,14 @@ h2 {
   text-shadow: rgba(255, 255, 255, 0.75) 1px 1px 0;
 }
 
-/* line 27, scss/connect.scss */
+/* line 28, scss/connect.scss */
 #body-con {
   padding: 0;
   margin: 0 auto;
   width: 960px;
 }
 
-/* line 33, scss/connect.scss */
+/* line 34, scss/connect.scss */
 #content-con {
   width: 700px;
   height: auto;
@@ -45,7 +46,7 @@ h2 {
   float: left;
 }
 
-/* line 39, scss/connect.scss */
+/* line 40, scss/connect.scss */
 #content {
   width: 100%;
   height: auto;
@@ -62,7 +63,7 @@ h2 {
   margin: 0;
 }
 
-/* line 48, scss/connect.scss */
+/* line 49, scss/connect.scss */
 #list-con {
   width: 250px;
   height: auto;
@@ -70,7 +71,7 @@ h2 {
   float: right;
 }
 
-/* line 54, scss/connect.scss */
+/* line 55, scss/connect.scss */
 #list {
   width: 100%;
   height: auto;
@@ -81,7 +82,7 @@ h2 {
   margin: 0;
 }
 
-/* line 60, scss/connect.scss */
+/* line 61, scss/connect.scss */
 .pIcon {
   display: inline-block;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -89,7 +90,7 @@ h2 {
   width: 35px;
 }
 
-/* line 67, scss/connect.scss */
+/* line 68, scss/connect.scss */
 .pIcon-con {
   height: 35px;
   width: 35px;
@@ -99,7 +100,7 @@ h2 {
   display: inline-block;
 }
 
-/* line 76, scss/connect.scss */
+/* line 77, scss/connect.scss */
 .act-content {
   width: 175px;
   margin: 0;
@@ -113,7 +114,7 @@ h2 {
   color: rgba(101, 101, 101, 0.7);
   display: inline-block;
 }
-/* line 89, scss/connect.scss */
+/* line 90, scss/connect.scss */
 .act-content h3 {
   font: 18px Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -126,7 +127,7 @@ h2 {
   display: inline-block;
 }
 
-/* line 102, scss/connect.scss */
+/* line 103, scss/connect.scss */
 .friend {
   margin: 0;
   margin-bottom: 5px;

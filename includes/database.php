@@ -1,38 +1,37 @@
 <?php
-function db_connect(){
-  $host     = "127.0.0.1";
-  $username = "admin";
-  $password = "hellsan631"; // Replace with your password
-  $database = "logos";
 
-  $link = mysql_connect($host, $username, $password);
+include '../class.database.config.php';
+
+function db_connect(){
+  $config = new config();
+
+  $link = mysql_connect($config->host, $config->username, $config->password);
   if(!$link){
     exit('Could not connect to database: '. mysql_error());
   }
 
-  $selected = mysql_select_db($database);
+  $selected = mysql_select_db($config->database);
   if(!$selected){
-    exit("Could not select database '$database'");
+    exit("Could not select database '$config->database'");
   }
 }
 
 function db_connect_link(){
-  $host     = "127.0.0.1";
-  $username = "admin";
-  $password = "hellsan631"; // Replace with your password
-  $database = "logos";
+  $config = new config();
 
-  $link = mysql_connect($host, $username, $password);
+  $link = mysql_connect($config->host, $config->username, $config->password);
   if(!$link){
     exit('Could not connect to database: '. mysql_error());
   }
 
-  $selected = mysql_select_db($database);
+  $selected = mysql_select_db($config->database);
   if(!$selected){
-    exit("Could not select database '$database'");
+    exit("Could not select database '$config->database'");
   }
 
   return $link;
 }
+
+
 
 ?>

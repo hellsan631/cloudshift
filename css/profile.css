@@ -42,20 +42,21 @@ body {
   color: #656565;
   margin: 0;
   padding: 0;
+  margin-top: 60px;
 }
 
-/* line 33, scss/profile.scss */
+/* line 34, scss/profile.scss */
 div {
   margin: 0;
   padding: 0;
 }
 
-/* line 37, scss/profile.scss */
+/* line 38, scss/profile.scss */
 a {
   color: #445566;
 }
 
-/* line 41, scss/profile.scss */
+/* line 42, scss/profile.scss */
 #avatar-con {
   float: left;
   margin-top: 72px;
@@ -68,13 +69,13 @@ a {
   -khtml-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 48, scss/profile.scss */
+/* line 49, scss/profile.scss */
 #avatar-con #useravatar {
   width: 150px;
   height: 150px;
 }
 
-/* line 53, scss/profile.scss */
+/* line 54, scss/profile.scss */
 #low-menu {
   background: url("../images/bg/white2.png");
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100, color-stop(1%, rgba(170, 170, 170, 0.2)), color-stop(100%, rgba(255, 255, 255, 0))), url("../images/bg/white2.png");
@@ -96,7 +97,7 @@ a {
   -khtml-border-radius: 0px 0px 3px 3px;
   border-radius: 0px 0px 3px 3px;
 }
-/* line 62, scss/profile.scss */
+/* line 63, scss/profile.scss */
 #low-menu h1 {
   margin: 0;
   padding: 0;
@@ -111,7 +112,7 @@ a {
   display: inline-block;
   cursor: default;
 }
-/* line 75, scss/profile.scss */
+/* line 76, scss/profile.scss */
 #low-menu .setting {
   width: auto;
   height: auto;
@@ -133,7 +134,7 @@ a {
   -khtml-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 86, scss/profile.scss */
+/* line 87, scss/profile.scss */
 #low-menu .setting span {
   padding-top: 2px;
   margin-right: -150px;
@@ -142,13 +143,13 @@ a {
   opacity: 0;
   z-index: 9;
 }
-/* line 95, scss/profile.scss */
+/* line 96, scss/profile.scss */
 #low-menu .setting a {
   font: 12px Helvetica, Arial, sans-serif;
   color: #656565;
   vertical-align: middle;
 }
-/* line 101, scss/profile.scss */
+/* line 102, scss/profile.scss */
 #low-menu .setting .icon {
   z-index: 10;
   vertical-align: middle;
@@ -159,14 +160,14 @@ a {
   margin-right: 3px;
   overflow: hidden;
 }
-/* line 111, scss/profile.scss */
+/* line 112, scss/profile.scss */
 #low-menu .setting:hover {
   -moz-transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-/* line 113, scss/profile.scss */
+/* line 114, scss/profile.scss */
 #low-menu .setting:hover span {
   -moz-transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
@@ -176,7 +177,7 @@ a {
   opacity: 1;
 }
 
-/* line 123, scss/profile.scss */
+/* line 124, scss/profile.scss */
 #prof-img {
   width: 300px;
   height: 300px;
@@ -185,7 +186,7 @@ a {
   border: none;
 }
 
-/* line 129, scss/profile.scss */
+/* line 130, scss/profile.scss */
 #recent-activity-con {
   width: 315px;
   height: auto;
@@ -213,7 +214,7 @@ a {
   -khtml-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 141, scss/profile.scss */
+/* line 142, scss/profile.scss */
 #recent-activity-con h2 {
   text-shadow: white 0px 1px 2px;
   margin: 0;
@@ -225,7 +226,7 @@ a {
   color: rgba(101, 101, 101, 0.9);
   border-bottom: 1px solid rgba(206, 206, 206, 0.8);
 }
-/* line 152, scss/profile.scss */
+/* line 153, scss/profile.scss */
 #recent-activity-con .recent-item {
   width: 315px;
   height: 70px;
@@ -236,7 +237,7 @@ a {
   display: inline-block;
   border-bottom: 1px solid rgba(206, 206, 206, 0.5);
 }
-/* line 161, scss/profile.scss */
+/* line 162, scss/profile.scss */
 #recent-activity-con .recent-item .act-content {
   width: 250px;
   height: 40px;
@@ -251,7 +252,7 @@ a {
   color: rgba(101, 101, 101, 0.7);
   display: inline-block;
 }
-/* line 173, scss/profile.scss */
+/* line 174, scss/profile.scss */
 #recent-activity-con .recent-item .act-content h3 {
   font: 18px Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -263,12 +264,12 @@ a {
   overflow: hidden;
   text-align: left;
 }
-/* line 186, scss/profile.scss */
+/* line 187, scss/profile.scss */
 #recent-activity-con .recent-item .pIcon {
   width: 40px;
   height: 40px;
 }
-/* line 189, scss/profile.scss */
+/* line 190, scss/profile.scss */
 #recent-activity-con .recent-item .pIcon-con {
   width: 40px;
   height: 40px;
@@ -279,12 +280,12 @@ a {
   float: left;
   display: inline-block;
 }
-/* line 199, scss/profile.scss */
+/* line 200, scss/profile.scss */
 #recent-activity-con .top {
   margin-top: 20px;
 }
 
-/* line 204, scss/profile.scss */
+/* line 205, scss/profile.scss */
 #mid {
   margin: 0 auto 0;
   width: 962px;
@@ -292,7 +293,7 @@ a {
   padding: 0;
 }
 
-/* line 210, scss/profile.scss */
+/* line 211, scss/profile.scss */
 #games-con {
   width: 600px;
   height: auto;
@@ -304,7 +305,7 @@ a {
   float: left;
 }
 
-/* line 217, scss/profile.scss */
+/* line 218, scss/profile.scss */
 #comment-box-con {
   width: 580px;
   height: auto;
@@ -333,7 +334,7 @@ a {
   -khtml-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 227, scss/profile.scss */
+/* line 228, scss/profile.scss */
 #comment-box-con h1 {
   margin: 0;
   padding: 0;
@@ -342,7 +343,7 @@ a {
   padding-bottom: 10px !important;
 }
 
-/* line 235, scss/profile.scss */
+/* line 236, scss/profile.scss */
 #comment-box {
   width: 580px;
   height: auto;
@@ -351,7 +352,7 @@ a {
   display: inline-block;
   margin-top: 5px;
 }
-/* line 241, scss/profile.scss */
+/* line 242, scss/profile.scss */
 #comment-box #enter_comment {
   width: 570px;
   height: 30px;
@@ -365,7 +366,7 @@ a {
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-/* line 251, scss/profile.scss */
+/* line 252, scss/profile.scss */
 #comment-box #comment_submit {
   color: rgba(77, 77, 77, 0.9);
   font: 12px 'Ubuntu', sans-serif;
@@ -384,7 +385,7 @@ a {
   word-wrap: normal;
   cursor: pointer;
 }
-/* line 267, scss/profile.scss */
+/* line 268, scss/profile.scss */
 #comment-box #comment-area {
   width: 580px;
   height: auto;
@@ -392,7 +393,7 @@ a {
   padding: 0;
   display: inline-block;
 }
-/* line 272, scss/profile.scss */
+/* line 273, scss/profile.scss */
 #comment-box #comment-area .comment {
   width: 568px;
   height: auto;
@@ -407,7 +408,7 @@ a {
   -o-box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 0px inset;
   box-shadow: rgba(255, 255, 255, 0.9) 0px 1px 0px inset;
 }
-/* line 283, scss/profile.scss */
+/* line 284, scss/profile.scss */
 #comment-box #comment-area .comment h3 {
   margin: 0;
   padding: 0;
@@ -421,7 +422,7 @@ a {
   border-right: 1px solid #cecece;
 }
 
-/* line 298, scss/profile.scss */
+/* line 299, scss/profile.scss */
 .active {
   height: 80px !important;
   border-color: rgba(63, 118, 183, 0.6) !important;
@@ -435,7 +436,7 @@ a {
   transition: all 0.3s ease-in;
 }
 
-/* line 305, scss/profile.scss */
+/* line 306, scss/profile.scss */
 #games-con h1 {
   margin: 0;
   padding: 0;
@@ -447,7 +448,7 @@ a {
   color: rgba(101, 101, 101, 0.9);
 }
 
-/* line 315, scss/profile.scss */
+/* line 316, scss/profile.scss */
 .games-item {
   border: 1px solid #cecece;
   background: url("../images/bg/white-less.png");
@@ -458,20 +459,20 @@ a {
   padding: 6px;
 }
 
-/* line 325, scss/profile.scss */
+/* line 326, scss/profile.scss */
 .games-item img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   opacity: 0.8;
 }
 
-/* line 331, scss/profile.scss */
+/* line 332, scss/profile.scss */
 .games-item img:hover {
   opacity: 1;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* line 336, scss/profile.scss */
+/* line 337, scss/profile.scss */
 .gamesitem-con {
   padding: 0;
   margin-top: 20px;
@@ -480,34 +481,34 @@ a {
   float: left;
 }
 
-/* line 344, scss/profile.scss */
+/* line 345, scss/profile.scss */
 .left {
   margin-left: 0px;
   margin-right: 20px;
 }
 
-/* line 348, scss/profile.scss */
+/* line 349, scss/profile.scss */
 .right {
   margin-right: 0px;
   margin-left: 0px;
   float: right;
 }
 
-/* line 354, scss/profile.scss */
+/* line 355, scss/profile.scss */
 #set-gear {
   padding: 0;
   margin: 0;
   margin-right: 6px;
 }
 
-/* line 360, scss/profile.scss */
+/* line 361, scss/profile.scss */
 #body-con {
   padding: 0;
   margin: 0 auto;
   width: 960px;
 }
 
-/* line 366, scss/profile.scss */
+/* line 367, scss/profile.scss */
 #main-one {
   width: 960px;
   height: 300px;
@@ -522,14 +523,14 @@ a {
   border-radius: 3px;
 }
 
-/* line 374, scss/profile.scss */
+/* line 375, scss/profile.scss */
 #prof-img-con {
   float: left;
   box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.15);
   z-index: 3;
 }
 
-/* line 380, scss/profile.scss */
+/* line 381, scss/profile.scss */
 #main-cont {
   float: left;
   padding: 0;

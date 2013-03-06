@@ -54,6 +54,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 			if(user::log_in(intval($auth))){
 
+				$_SESSION['user_id'] = $newuser->id;
+
 				if(isset($_SESSION['trycount'])){unset($_SESSION['trycount']);}
 
 				if(isset($_SESSION['date'])){unset($_SESSION['date']);}
@@ -107,9 +109,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 		$userdata = array('username' => $user['username'], 'email' => $email, 'password' => $password, 'salt' => $salt, 'userlevel' => -1, 'securekey' => $secure);
 
-		if(!@$newuser->write_new_user($userdata)){
-			fail('Failed to Write User');
-		}
+		$url = 'http://sendgrid.com/';
+		$user = getenv("SENDGRID_USERNAME");
+		$pass = getenv("SENDGRID_PASSWORD");
+
 
 		$subject = 'Thanks for Registering!';
 
@@ -124,10 +127,50 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 		This is an automated response, please do not reply!";
 
-		if(@mail($email, $subject, $message, 'From: Project Logos<admin@projectlogos.com>')){
-			fail('Success! Please Check Your Email');//sent the email, back to login page
+		$from = 'admin@projectlogos.com';
+
+		$params = array(
+				'api_user'  => $user,
+				'api_key'   => $pass,
+				'to'        => $email,
+				'subject'   => $subject,
+				'html'      => $message,
+				'text'      => $message,
+				'from'      => $from
+		);
+
+		$request =  $url.'api/mail.send.json';
+
+		// Generate curl request
+		$session = curl_init($request);
+		// Tell curl to use HTTP POST
+		curl_setopt ($session, CURLOPT_POST, true);
+		// Tell curl that this is the body of the POST
+		curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
+		// Tell curl not to return headers, but do return the response
+		curl_setopt($session, CURLOPT_HEADER, false);
+		curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+
+		// obtain response
+		$response = curl_exec($session);
+		curl_close($session);
+
+		// print everything out
+
+		$responseString = print_r($response,true);
+
+		if($responseString == '{"message":"success"}'){
+
+			if(!@$newuser->write_new_user($userdata)){
+				fail('Failed to Write User');
+			}
+
+			fail('Success! Please Check Your Email');
+
 		}else{
+
 			fail('Failed to Send Email');//failed to send email, email server down
+
 		}
 
 	}elseif($submitType == 2){
@@ -164,6 +207,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		$user = DB::sql_fetch($result);
 
 		$salt = $user['salt'];
+		$email = $user['email'];
 		$randpw = randPassword($salt);
 		$password = s::add_salt($randpw, $salt);//generate new userpassword from salt
 		$query = "UPDATE users SET `password` = '$password' WHERE";
@@ -177,8 +221,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			$query = $query."`email` = '$temp' ";
 		}
 
-		DB::sql($query);
-
 		$subject = "Forgot Password for Project Logos";
 		$message = "Hi, we have reset your password.
 
@@ -191,10 +233,43 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 		This is an automated response, please do not reply!";
 
-		if(mail($email, $subject, $message, "From: Project Logos<admin@projectlogos.com>")){
+		$from = 'admin@projectlogos.com';
+
+		$params = array(
+				'api_user'  => $user,
+				'api_key'   => $pass,
+				'to'        => $email,
+				'subject'   => $subject,
+				'html'      => $message,
+				'text'      => $message,
+				'from'      => $from
+		);
+
+		$request =  $url.'api/mail.send.json';
+
+		// Generate curl request
+		$session = curl_init($request);
+		// Tell curl to use HTTP POST
+		curl_setopt ($session, CURLOPT_POST, true);
+		// Tell curl that this is the body of the POST
+		curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
+		// Tell curl not to return headers, but do return the response
+		curl_setopt($session, CURLOPT_HEADER, false);
+		curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+
+		// obtain response
+		$response = curl_exec($session);
+		curl_close($session);
+
+		// print everything out
+
+		$responseString = print_r($response,true);
+
+		if($responseString == '{"message":"success"}'){
+			DB::sql($query);
 			fail('Password Sent Successfully');
 		}else{
-			fail('Unable to contact mail server. '.$message);
+			fail('Unable to contact mail server.');
 		}
 
 	}

@@ -11,34 +11,34 @@ $changed = false;
 
 if(isset($_GET['key'])){
 
-	$key = h::clean($_GET['key']);
+	$key = clean($_GET['key']);
 
 	if(strlen($key) <= 4){
-		e::error("Key length invalid");
+		error("Key length invalid");
 	}
 
 	$query = "SELECT `id` FROM users WHERE `securitykey` = '$key'";
-	$result = @DB::sql($query);
+	$result = DB::sql($query);
 
 	if(@$result){
-		$result = @DB::sql_fetch($result);
+		$result = DB::sql_fetch($result);
 	}
 
 	$tempuser = new user();
 
 	if(@$result['id']){
 
-		$tempuser = @user::load_id($result['id']);
+		$tempuser = user::load_id($result['id']);
 
 		if($tempuser->userlevel == -1){
 
 			$query = "UPDATE users SET `userlevel` = '5' WHERE `id` = '$tempuser->id'";
-			$result = @DB::sql($query);
+			$result = DB::sql($query);
 
 			if($result){
 
 				$query = "UPDATE users SET `securitykey` = '0' WHERE `id` = '$tempuser->id'";
-				$result = @DB::sql($query);
+				$result = DB::sql($query);
 
 				if($result){
 					$changed = true;
@@ -47,7 +47,7 @@ if(isset($_GET['key'])){
 			}
 		}else{
 
-			e::error("You are already authenticated");
+			error("You are already authenticated");
 
 		}
 	}

@@ -136,8 +136,9 @@ include './_functions/profile.funk.php';
     </form>
 </div>
 
+<?php include "./_footer.php"; ?>
+
 <div id="backgroundPopup"></div>
-</body>
 <?php echo "<script>var thisid = $pageUser->id;</script>";?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
@@ -199,4 +200,5 @@ function closePops(){
 <script>
 $("#<?php echo THIS_PAGE;?>").addClass("selected-mi");
 </script>
+</body>
 </html>

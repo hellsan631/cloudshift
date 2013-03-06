@@ -1,5 +1,93 @@
-@import "functions";
+/* _functions.scss */
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:400,700");
+@import url("http://fonts.googleapis.com/css?family=Contrail+One");
+@import url("http://fonts.googleapis.com/css?family=Crimson+Text");
+/* line 3, scss/games.scss */
+body {
+  background: url("../images/bg/noise.png") repeat scroll 0% 0% transparent;
+  color: #656565;
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+}
 
+/* line 10, scss/games.scss */
+div {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, scss/games.scss */
+a {
+  color: #445566;
+}
+
+/* line 18, scss/games.scss */
+#game-header {
+  margin-top: 0px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+/* line 24, scss/games.scss */
+#game-header img {
+  display: inline-block;
+}
+/* line 28, scss/games.scss */
+#game-header .game-icon {
+  width: 64px;
+  height: auto;
+  margin-right: 20px;
+  margin-top: 25px;
+  margin-left: 30px;
+  float: left;
+}
+/* line 37, scss/games.scss */
+#game-header h3 {
+  color: white;
+  font: 50px 'Ubuntu', sans-serif;
+  line-height: 0px;
+  font-weight: 400;
+  text-shadow: rgba(0, 0, 0, 0.9) 1px 1px 3px;
+  display: inline-block;
+  margin-top: 55px;
+  float: left;
+}
+
+/* line 50, scss/games.scss */
+#games-content {
+  position: relative;
+  width: 960px;
+  height: 1040px;
+  background: url("../images/sc2bg.jpg") top center;
+  margin: 0px auto;
+  border: 1px solid #cecece;
+  text-align: left;
+  z-index: -1;
+}
+
+/* line 61, scss/games.scss */
+#game-info {
+  position: absolute;
+  width: 430px;
+  height: 300px;
+  padding: 10px;
+  background-image: -webkit-gradient(linear, 0% 50%, 430 50%, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(76.744%, rgba(50, 50, 50, 0.4)), color-stop(100%, rgba(80, 80, 80, 0.2)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0px, rgba(50, 50, 50, 0.4) 330px, rgba(80, 80, 80, 0.2) 430px);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.8) 0px, rgba(50, 50, 50, 0.4) 330px, rgba(80, 80, 80, 0.2) 430px);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.8) 0px, rgba(50, 50, 50, 0.4) 330px, rgba(80, 80, 80, 0.2) 430px);
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.8) 0px, rgba(50, 50, 50, 0.4) 330px, rgba(80, 80, 80, 0.2) 430px);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.8) 0px, rgba(50, 50, 50, 0.4) 330px, rgba(80, 80, 80, 0.2) 430px);
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px inset, rgba(0, 0, 0, 0.6) 0px 0px 2px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px inset, rgba(0, 0, 0, 0.6) 0px 0px 2px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px inset, rgba(0, 0, 0, 0.6) 0px 0px 2px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px inset, rgba(0, 0, 0, 0.6) 0px 0px 2px inset;
+  top: 300px;
+  right: 50px;
+  z-index: 0;
+}
+
+/*
 .icon-comments,.icon-user,.icon-cog,.icon-minus,.icon-plus {
 	display: inline-block;
 	width: 16px;
@@ -21,22 +109,6 @@
 }
 .icon-plus {
 	background-position: -128px 0;
-}
-
-
-body{
-	@include bgurl("noise.png", 'true');
-	color:rgba(101,101,101,1);
-	@include zero;
-	margin-top:60px;
-}
-
-div{
-	@include zero;
-}
-
-a{
-	color: rgba(68, 85, 102,1);
 }
 
 #avatar-con{
@@ -278,7 +350,7 @@ a{
 			border-bottom: 1px solid rgba($border, 0.7);
 			font: 12px Helvetica, Arial, sans-serif;
 			display:inline-block;
-			//background: url('../images/bg/white3.png');
+			background: url('../images/bg/white3.png');
 			@include box-shadow(rgba(white, 0.9) 0px 1px 0px inset);
 
 			h3{
@@ -386,3 +458,5 @@ a{
 	height:300px;
 	@include border-radius(3px);
 }
+
+*/
